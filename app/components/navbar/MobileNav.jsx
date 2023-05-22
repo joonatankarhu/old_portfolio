@@ -1,9 +1,8 @@
 const MobileNav = ({ navHeight }) => {
-  console.log(navHeight)
   return (
-    <div className={`absolute top-[${navHeight}px] w-full bg-white rounded-md shadow-lg py-2 z-10`}>
+    <div className={`absolute lg:hidden top-[${navHeight}px] w-full shadow-lg z-10 px-1`}>
       <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
-        Menu Item 11
+        Menu Item 1
       </a>
       <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
         Menu Item 2

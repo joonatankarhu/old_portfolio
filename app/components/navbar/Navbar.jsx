@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Hamburger from './Hamburger'
 import MobileNav from './MobileNav'
 import { useEffect, useRef, useState } from 'react'
+import Link from 'next/link'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -19,16 +20,21 @@ const Navbar = () => {
   }, [])
 
   return (
-    <div ref={componentRef} className="flex justify-between w-full px-5 bg-red-600">
-      <div>
-        <Image
-          src="/profile_picture.png"
-          width={50}
-          height={50}
-          alt="Picture of the author"
-        />
+    <div className='fixed top-0 left-0 right-0'>
+      <div
+        ref={componentRef}
+        className="flex relative items-center justify-between w-full px-5 py-2 shadow-sm"
+      >
+        <Link href="/" className='w-8'>
+          <Image
+            src="/profile_picture.png"
+            width={50}
+            height={50}
+            alt="Picture of the author"
+          />
+        </Link>
+        <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
-      <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
       {isOpen && <MobileNav navHeight={navHeight} />}
     </div>
   )
