@@ -1,6 +1,13 @@
 'use client'
 
+import { useState } from "react";
+
 const Hamburger = ({ isOpen, setIsOpen }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleHover = () => {
+    setIsHovered(!isHovered);
+  };
   const handleToggle = () => {
     setIsOpen(!isOpen)
   }
@@ -9,16 +16,20 @@ const Hamburger = ({ isOpen, setIsOpen }) => {
     <div className="relative">
       <button
         type="button"
-        className="block text-black hover:text-blue-700 focus:text-gray-700 focus:outline-none"
         onClick={handleToggle}
+        className={`block focus:outline-none transition-transform duration-1000 transform ${
+          isHovered ? 'rotate-90 text-blue-700' : 'rotate-0'
+        }`}
+        onMouseEnter={handleHover}
+        onMouseLeave={handleHover}
       >
         <svg
-          className="w-6 h-6"
+          className="w-7 h-10"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          strokeWidth="2"
+          strokeWidth="2.3"
           strokeLinecap="round"
           strokeLinejoin="round"
         >
