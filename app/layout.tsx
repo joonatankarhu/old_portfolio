@@ -5,8 +5,11 @@ import Navbar from './components/navbar/Navbar'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Portfolio - Joonatan Karhu',
-  description: 'Fullstack Developer Joonatan Karhu',
+  title: 'Joonatan Karhu',
+  description: 'Portfolio, Fullstack Developer Joonatan Karhu',
+  icons: {
+    icon: '/favicon.ico',
+  },
 }
 
 export default function RootLayout({
@@ -17,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar/>
+        <Navbar />
         {children}
       </body>
     </html>

@@ -16,12 +16,18 @@ export const theme = {
       lessSmall: "400px",
       mobile: "450px",
       mobileX: "500px",
-      almostIpad: "650px",
-      md: "768px"
+      almostIpad: "600px",
+      closeIpad: "650px",
+      md: "768px",
+      med: "900px",
+      lg: "970px",
+      xlg: "1100px"
     },
-    backgroundImage: {
-      'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-      'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+    fontSize: {
+      sm: '0.875rem',   // 14px in em units
+      base: '1rem',     // 16px in em units
+      lg: '1.125rem',   // 18px in em units
+      xl: '1.25rem',    // 20px in em units
     },
   },
 };

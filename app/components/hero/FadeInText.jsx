@@ -17,19 +17,26 @@ const FadeInText = () => {
   }, [isVisible])
 
   return (
-    <div className="relative flex flex-col justify-center items-center h-screen z-5">
-      <div className="absolute top-10 extraSmall:top-8 lessSmall:top-14 mobile:top-18 mobileX:text-center almostIpad:top-20">
+    <div className="lg:w-1/2 relative flex flex-col justify-center items-center">
+      <div className="w-full relative mt-10 almostIpad:mt-14 md:mt-20 lg:mt-0">
         <h1
-          className={`text-2xl extraSmall:text-3xl smaller:text-4xl small:text-5xl lessSmall:text-6xl mobileX:text-7xl almostIpad:text-6xl md:text-7xl text-gray-800 ${
+          className={`font-semibold text-4xl smaller:text-5xl small:text-6xl mobileX:text-7xl
+          closeIpad:text-8xl 
+          md:text-8xl
+          
+           text-gray-800 ${
             isVisible ? 'animate-fadeLeftToMiddle' : 'opacity-0'
           }`}
         >
           Fullstack Developer
         </h1>
       </div>
-      <div className="absolute w-full mobileX:text-center left-0 pb-10 extraSmall:pb-20 small:mt-10 lessSmall:mt-0 lessSmall:top-[210px] mobileX:top-[240px] almostIpad:top-[180px]">
+      <div className="relative mt-3 smaller:mt-5 w-full small:mt-6 almostIpad:mt-8 md:mt-8 med:mt-12 lg:mt-8">
         <h2
-          className={`text-xl extraSmall:text-2xl small:text-3xl lessSmall:text-4xl mobileX:text-5xl md:text-5xl text-gray-800 ${
+          className={`font-medium md:font-semibold text-2xl extraSmall:text-2xl smaller:text-3xl small:text-4xl almostIpad:text-5xl
+          md:text-5xl med:text-6xl lg:text-5xl 
+           first-letter:
+            text-gray-800 ${
             secondVisible ? 'animate-fadeLeftToMiddle' : 'opacity-0'
           }`}
         >

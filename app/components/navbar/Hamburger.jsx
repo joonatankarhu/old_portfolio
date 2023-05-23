@@ -18,13 +18,13 @@ const Hamburger = ({ isOpen, setIsOpen }) => {
         type="button"
         onClick={handleToggle}
         className={`block focus:outline-none transition-transform duration-1000 transform ${
-          isHovered && !isOpen ? 'rotate-90 text-blue-700' : 'rotate-0 hover:rotate-90 hover:text-blue-700'
+          isHovered && !isOpen ? 'rotate-90 text-gray-700' : 'rotate-0 hover:rotate-90 hover:text-gray-700'
         }`}
         onMouseEnter={handleHover}
         onMouseLeave={handleHover}
       >
         <svg
-          className="w-7 h-10"
+          className="w-8 h-10"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="none"
