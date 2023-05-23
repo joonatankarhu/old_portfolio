@@ -12,7 +12,7 @@ const DeskNav = () => {
         My Work
       </Link>
       <Link
-        href="/"
+        href="#about"
         className="block px-5 py-4 text-gray-800 hover:bg-gray-100 hover:text-black transition-all duration-500"
       >
         About

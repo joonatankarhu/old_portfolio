@@ -8,7 +8,7 @@ const WorkItem = () => {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div className="flex flex-col items-start justify-center lg:items-center">
-      <Link href="https://heybeautycollections.netlify.app/" target="_blank" className=''>
+      <Link href="https://heybeautycollections.netlify.app/" target="_blank">
       <div
           className={`relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ${
             isHovered ? 'scale-[102%]' : 'scale-100'
