@@ -1,4 +1,4 @@
-import Hero from './components/hero/hero'
+import Hero from './components/hero/Hero'
 import Work from './components/work/Work'
 import About from './components/About'
 import Contact from './components/Contact.jsx'
