@@ -13,7 +13,7 @@ const Hamburger = ({ isOpen, setIsOpen }) => {
   }
 
   return (
-    <div className="relative">
+    <div className="relative ml-auto lg:hidden">
       <button
         type="button"
         onClick={handleToggle}

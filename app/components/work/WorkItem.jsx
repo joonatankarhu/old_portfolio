@@ -1,21 +1,33 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react';
 
 const WorkItem = () => {
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <div className="flex flex-col items-start justify-center lg:items-center">
-      <Link href="https://heybeautycollections.netlify.app/" target="_blank">
-        <Image
-          src="/heybeauty.jpg"
-          width={1300}
-          height={1300}
-          alt="Project picture"
-        />
+      <Link href="https://heybeautycollections.netlify.app/" target="_blank" className=''>
+      <div
+          className={`relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ${
+            isHovered ? 'scale-[102%]' : 'scale-100'
+          }`}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          <Image
+            src="/heybeauty.jpg"
+            width={1300}
+            height={1300}
+            alt="Project picture"
+          />
+        </div>
       </Link>
       <div className="lg:flex mt-5 lg:mt-10">
         <div className="flex flex-col items-start gap-1 lg:w-[80%] lg:pr-20">
           <h3 className="font-bold text-3xl lg:text-4xl lg:mb-5">HeyBeautyCollections</h3>
-          <p className="text-black/80">
+          <p className="text-black/80 ">
             {/* This is responsive and functional eCommerce clothing store. It has
             Stripe, Webhooks, headless CMS, RESTful API's, language options and
             much more. */}
