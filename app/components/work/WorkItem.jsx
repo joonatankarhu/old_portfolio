@@ -2,14 +2,14 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react';
+import { useState } from 'react'
 
 const WorkItem = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState(false)
   return (
     <div className="flex flex-col items-start justify-center lg:items-center">
       <Link href="https://heybeautycollections.netlify.app/" target="_blank">
-      <div
+        <div
           className={`relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ${
             isHovered ? 'scale-[102%]' : 'scale-100'
           }`}
@@ -26,7 +26,9 @@ const WorkItem = () => {
       </Link>
       <div className="lg:flex mt-5 lg:mt-10">
         <div className="flex flex-col items-start gap-1 lg:w-[80%] lg:pr-20">
-          <h3 className="font-bold text-3xl lg:text-4xl lg:mb-5">HeyBeautyCollections</h3>
+          <h3 className="font-bold text-3xl lg:text-4xl lg:mb-5">
+            HeyBeautyCollections
+          </h3>
           <p className="text-black/80 ">
             {/* This is responsive and functional eCommerce clothing store. It has
             Stripe, Webhooks, headless CMS, RESTful API's, language options and
@@ -41,7 +43,7 @@ const WorkItem = () => {
             Live demo
           </Link>
         </div>
-        <div className='lg:w-[20%] lg:flex lg:flex-wrap'>
+        <div className="lg:w-[20%] lg:flex lg:flex-wrap">
           <h4 className="font-medium text-xl mt-5 lg:mt-0">Technologies</h4>
           <div className="flex flex-row flex-wrap content-start lg:justify-center justify-start items-center gap-4 text-lg font-semibold w-full mt-4">
             <div className="w-[45%] lg:w-[100%] flex justify-start content-start items-center gap-1">
