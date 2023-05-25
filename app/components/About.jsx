@@ -2,8 +2,8 @@
 const About = () => {
   return (
     <div id="about" className="flex w-full my-5 flex-col mt-20">
-      <h4 className="text-2xl lessSmall:text-4xl md:text-4xl lg:text-5xl font-semibold">About me</h4>
-      <p className="mt-3 text-black/80">
+      <h4 className="text-2xl smaller:text-3xl lessSmall:text-4xl almostIpad:text-5xl  md:text-4xl lg:text-5xl font-semibold text-gray-700/50">About</h4>
+      <p className="mt-3 text-black/80 text-lg">
         My name is Joonatan Karhu. I am a self taught Fullstack Web
         Developer with two years of experience in self studies and building
         projects. At the moment I'm working on a freelance eCommerce project and

@@ -2,9 +2,9 @@ import WorkItem from './WorkItem'
 
 const Work = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-5 w-full mt-10">
-      <h3 className="text-4xl smaller:text-5xl almostIpad:text-5xl lg:text-7xl font-semibold w-full mb-2 text-black/90 lg:text-center">
-        Work
+    <div className="flex flex-col items-center justify-center gap-5 w-full mt-10 lg:px-5 lg:py-10">
+      <h3 className="text-2xl smaller:text-3xl  lessSmall:text-4xl almostIpad:text-5xl lg:text-7xl font-semibold w-full mb-2 text-gray-700/50 lg:text-center">
+        Experience
       </h3>
       <WorkItem />
     </div>

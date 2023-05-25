@@ -6,12 +6,41 @@ import { useState } from 'react'
 
 const WorkItem = () => {
   const [isHovered, setIsHovered] = useState(false)
+
+  const skills = [
+    {
+      name: 'Next.js',
+      imageSrc:
+        'https://img.icons8.com/fluency-systems-filled/48/000000/nextjs.png',
+    },
+    {
+      name: 'React.js',
+      imageSrc: 'https://img.icons8.com/color/48/000000/react-native.png',
+    },
+    {
+      name: 'Express.js',
+      imageSrc: 'https://img.icons8.com/fluency/48/null/express-js.png',
+    },
+    {
+      name: 'Node.js',
+      imageSrc: 'https://img.icons8.com/fluency/100/null/node-js.png',
+    },
+    {
+      name: 'Tailwind',
+      imageSrc: 'https://img.icons8.com/color/48/000000/tailwindcss.png',
+    },
+    {
+      name: 'Sanity',
+      imageSrc: '/sanity.svg',
+    },
+  ]
+
   return (
     <div className="flex flex-col items-start justify-center lg:items-center">
       <Link href="https://heybeautycollections.netlify.app/" target="_blank">
         <div
-          className={`relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ${
-            isHovered ? 'scale-[102%]' : 'scale-100'
+          className={`relative rounded-md overflow-hidden lg:rounded-lg shadow-lg lg:shadow-xl transition-transform duration-300 ${
+            isHovered ? 'scale-[102%] lg:scale-[102%]' : 'scale-[100%] lg:scale-[100%]'
           }`}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
@@ -26,10 +55,10 @@ const WorkItem = () => {
       </Link>
       <div className="lg:flex mt-5 lg:mt-10">
         <div className="flex flex-col items-start gap-1 lg:w-[80%] lg:pr-20">
-          <h3 className="font-bold text-3xl lg:text-4xl lg:mb-5">
+          <h3 className="font-bold text-xl small:text-2xl almostIpad:text-3xl md:text-4xl lg:mb-5">
             HeyBeautyCollections
           </h3>
-          <p className="text-black/80 ">
+          <p className="text-black/80  lessSmall:text-lg">
             {/* This is responsive and functional eCommerce clothing store. It has
             Stripe, Webhooks, headless CMS, RESTful API's, language options and
             much more. */}
@@ -38,51 +67,25 @@ const WorkItem = () => {
           <Link
             href="https://heybeautycollections.netlify.app/"
             target="_blank"
-            className="text-white bg-black hover:bg-black/80 transition-all duration-300 py-2 px-5 rounded-md mt-4"
+            className="text-white w-full text-center font-semibold bg-black hover:bg-blue-700 transition-all duration-300 py-2 rounded-md mt-4 smaller:py-3 smaller:text-lg lessSmall:mt-6 lessSmall:mb-4 mobileX:text-xl mobileX:py-4 almostIpad:max-w-[400px] lg:max-w-[300px]"
           >
             Live demo
           </Link>
         </div>
         <div className="lg:w-[20%] lg:flex lg:flex-wrap">
-          <h4 className="font-medium text-xl mt-5 lg:mt-0">Technologies</h4>
-          <div className="flex flex-row flex-wrap content-start lg:justify-center justify-start items-center gap-4 text-lg font-semibold w-full mt-4">
-            <div className="w-[45%] lg:w-[100%] flex justify-start content-start items-center gap-1">
-              <div className="w-[35px]">
-                <img src="https://img.icons8.com/fluency-systems-filled/48/000000/nextjs.png" />
-              </div>
-              <p>Next.js</p>
-            </div>
-            <div className="w-[45%] lg:w-[100%]  flex justify-start content-start items-center gap-1">
-              <div className="w-[35px]">
-                <img src="https://img.icons8.com/color/48/000000/react-native.png" />
-              </div>
-
-              <p>React.js</p>
-            </div>
-            <div className="w-[45%] lg:w-[100%] flex justify-start content-start items-center gap-1">
-              <div className="w-[35px]">
-                <img src="https://img.icons8.com/fluency/48/null/express-js.png" />
-              </div>
-              <p>Express.js</p>
-            </div>
-            <div className="w-[45%] lg:w-[100%] flex justify-start content-start items-center gap-1">
-              <div className="w-[35px]">
-                <img src="https://img.icons8.com/fluency/100/null/node-js.png" />
-              </div>
-              <p>Node.js</p>
-            </div>
-            <div className="w-[45%] lg:w-[100%] flex justify-start content-start items-center gap-1">
-              <div className="w-[35px]">
-                <img src="https://img.icons8.com/color/48/000000/tailwindcss.png" />
-              </div>
-              <p>TailWindCSS</p>
-            </div>
-            <div className="w-[45%] lg:w-[100%] flex justify-start content-start items-center gap-1">
-              <div className="w-[35px]">
-                <img src="/sanity.svg" />
-              </div>
-              <p>Sanity CMS</p>
-            </div>
+          <h4 className="font-medium text-xl smaller:text-2xl md:text-3xl mt-5 lg:mt-0">
+            Technologies
+          </h4>
+          <div className="flex flex-row flex-wrap content-start lg:justify-center justify-start items-center gap-4 smaller:gap-6 text-lg font-semibold w-full mt-4">
+            {skills &&
+              skills.map((skill) => (
+                <div className="w-full smaller:w-[45%] small:w-[45%] lg:w-[100%] flex justify-start content-start items-center gap-[6px] smaller:gap-2">
+                  <div className="w-[14%] smaller:w-[25%] min-w-[35px] small:min-w-[40px]">
+                    <img src={skill.imageSrc} />
+                  </div>
+                  <p>{skill.name}</p>
+                </div>
+              ))}
           </div>
         </div>
       </div>
