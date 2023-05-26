@@ -1,28 +1,27 @@
-import Link from 'next/link'
 
 const DeskNav = () => {
   return (
     <div
       className='hidden lg:flex bg-white absolute font-medium w-full shadow-lg z-20 text-lg'
     >
-      <Link
+      <a
         href="#work"
         className="block px-5 py-4 text-gray-800 hover:bg-gray-100 hover:text-black transition-all duration-500"
       >
         My Work
-      </Link>
-      <Link
+      </a>
+      <a
         href="#about"
         className="block px-5 py-4 text-gray-800 hover:bg-gray-100 hover:text-black transition-all duration-500"
       >
         About
-      </Link>
-      <Link
+      </a>
+      <a
         href="#contact"
         className="block px-5 py-4 text-gray-800 hover:bg-gray-100 hover:text-black transition-all duration-500"
       >
         Contact
-      </Link>
+      </a>
       <a
         href="/CV.pdf"
         className="block px-5 py-4 text-gray-800 hover:bg-gray-100 hover:text-black transition-all duration-500"

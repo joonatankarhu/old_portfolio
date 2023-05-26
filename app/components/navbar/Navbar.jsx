@@ -4,19 +4,22 @@ import MobileNav from './MobileNav'
 import DeskNav from './DeskNav'
 
 import { useEffect, useRef, useState } from 'react'
-import Image from 'next/image'
 
 const Navbar = () => {
   const [navHeight, setNavHeight] = useState(0)
 
   const [prevScrollPos, setPrevScrollPos] = useState(0)
-  const [visible, setVisible] = useState(false)
+  const [visible, setVisible] = useState(true)
+  const [backToTop, setBackToTop] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset
 
       setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10)
+      if (currentScrollPos > 500) {
+        setBackToTop(true)
+      }
       setPrevScrollPos(currentScrollPos)
     }
 
@@ -66,10 +69,31 @@ const Navbar = () => {
           ref={componentRef}
           className="lg:hidden flex relative items-center w-full px-5 py-2 shadow-sm"
         >
-          
+          {backToTop && (
+            <a
+              href="#home"
+              onClick={() => {
+                setIsOpen(false)
+              }}
+              className={`${
+                backToTop
+                  ? 'opacity-100 transition-opacity duration-5000'
+                  : 'opacity-0'
+              } z-[110] block rounded-lg px-2 py-2 text-gray-600/80 font-medium hover:bg-gray-100 hover:text-black text-base`}
+            >
+              Back to Top
+            </a>
+          )}
+
           <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
-        {isOpen && <MobileNav isOpen={isOpen} navHeight={navHeight} />}
+        {isOpen && (
+          <MobileNav
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
+            navHeight={navHeight}
+          />
+        )}
       </div>
     </>
   )
