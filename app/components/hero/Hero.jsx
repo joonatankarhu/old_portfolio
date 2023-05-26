@@ -4,7 +4,7 @@ import Introduction from './Introduction'
 
 const Hero = () => {
   return (
-    <div className="w-full h-screen relative lg:flex lg:justify-center lg:items-center">
+    <div className="w-full h-full lg:h-screen relative lg:flex lg:justify-center lg:items-center">
       <FadeInText/>
       <Introduction/>
     </div>

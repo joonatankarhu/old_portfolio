@@ -13,13 +13,11 @@ const Hamburger = ({ isOpen, setIsOpen }) => {
   }
 
   return (
-    <div className="relative ml-auto lg:hidden">
+    <div className="relative ml-auto lg:hidden z-[100]">
       <button
         type="button"
         onClick={handleToggle}
-        className={`block focus:outline-none transition-transform duration-1000 transform ${
-          isHovered && !isOpen ? 'rotate-90 text-gray-700' : 'rotate-0 hover:rotate-90 hover:text-gray-700'
-        }`}
+        className={`text-black/70 hover:text-black block focus:outline-none transition-transform duration-1000 `}
         onMouseEnter={handleHover}
         onMouseLeave={handleHover}
       >

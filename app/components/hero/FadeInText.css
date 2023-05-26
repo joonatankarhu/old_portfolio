@@ -11,5 +11,5 @@
 }
 
 .animate-fadeLeftToMiddle {
-  animation: fadeLeftToMiddle 2s forwards;
+  animation: fadeLeftToMiddle 1.5s forwards;
 }

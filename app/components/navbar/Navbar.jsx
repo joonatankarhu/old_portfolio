@@ -4,9 +4,9 @@ import MobileNav from './MobileNav'
 import DeskNav from './DeskNav'
 
 import { useEffect, useRef, useState } from 'react'
+import Image from 'next/image'
 
 const Navbar = () => {
-
   const [navHeight, setNavHeight] = useState(0)
 
   const [prevScrollPos, setPrevScrollPos] = useState(0)
@@ -48,7 +48,6 @@ const Navbar = () => {
     }
   }, [])
 
-
   return (
     <>
       <div
@@ -67,9 +66,10 @@ const Navbar = () => {
           ref={componentRef}
           className="lg:hidden flex relative items-center w-full px-5 py-2 shadow-sm"
         >
+          
           <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
-        {isOpen && <MobileNav navHeight={navHeight} />}
+        {isOpen && <MobileNav isOpen={isOpen} navHeight={navHeight} />}
       </div>
     </>
   )

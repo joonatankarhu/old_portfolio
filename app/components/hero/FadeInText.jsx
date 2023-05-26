@@ -17,10 +17,10 @@ const FadeInText = () => {
   }, [isVisible])
 
   return (
-    <div className="lg:w-1/2 relative flex flex-col justify-center items-center">
+    <div className="lg:w-1/2 mt-5 extraSmall:mt-2 small:mt-5 almostIpad:mt-0 relative flex flex-col justify-center items-center">
       <div className="w-full relative mt-10 almostIpad:mt-14 md:mt-20 lg:mt-0 lg:top-[-50px]">
         <h1
-          className={`font-semibold text-4xl smaller:text-5xl small:text-6xl mobileX:text-7xl
+          className={`font-semibold text-4xl smaller:text-5xl small:text-6xl mobileX:text-6xl almostIpad:pr-10 closeIpad:pr-0
           closeIpad:text-8xl 
           md:text-8xl
           

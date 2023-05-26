@@ -55,7 +55,7 @@ const WorkItem = () => {
       </Link>
       <div className="lg:flex mt-5 lg:mt-10">
         <div className="flex flex-col items-start gap-1 lg:w-[80%] lg:pr-20">
-          <h3 className="font-bold text-xl small:text-2xl almostIpad:text-3xl md:text-4xl lg:mb-5">
+          <h3 className="font-bold text-xl smaller:text-2xl almostIpad:text-3xl md:text-4xl lg:mb-5">
             HeyBeautyCollections
           </h3>
           <p className="text-black/80  lessSmall:text-lg">
@@ -67,7 +67,7 @@ const WorkItem = () => {
           <Link
             href="https://heybeautycollections.netlify.app/"
             target="_blank"
-            className="text-white w-full text-center font-semibold bg-black hover:bg-blue-700 transition-all duration-300 py-2 rounded-md mt-4 smaller:py-3 smaller:text-lg lessSmall:mt-6 lessSmall:mb-4 mobileX:text-xl mobileX:py-4 almostIpad:max-w-[400px] lg:max-w-[300px]"
+            className="text-white w-full text-center font-semibold bg-black hover:bg-blue-700 transition-all duration-300 py-2 rounded-md mt-4 smaller:py-3 smaller:text-lg lessSmall:mt-6 lessSmall:mb-4 mobileX:py-3 almostIpad:max-w-[400px] lg:max-w-[300px]"
           >
             Live demo
           </Link>

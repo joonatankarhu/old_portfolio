@@ -1,13 +1,22 @@
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
 
-const MobileNav = ({ navHeight }) => {
+
+const MobileNav = ({ isOpen, navHeight }) => {
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
   return (
     <div
-      className={`lg:hidden bg-white z-[50] absolute top-[${navHeight}px] font-medium w-full shadow-lg z-20 px-1 text-lg lg:flex`}
+    className={`lg:hidden bg-white z-50 fixed top-0 left-0 w-full font-medium shadow-md border-b-2 border-gray-700/20 px-1 text-lg transition-transform duration-500 transform ${
+      isMounted && isOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
+    }`}
+    style={{ paddingTop: `${navHeight}px` }}
     >
       <Link
         href="#work"
-        scroll={false}
         className="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-black hover:pl-6 transition-all duration-500"
       >
         My Work
