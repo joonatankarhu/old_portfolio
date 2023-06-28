@@ -3,6 +3,7 @@
 import Hero from './components/hero/Hero'
 import Work from './components/work/Work'
 import About from './components/About'
+import Education from './components/Education'
 import Contact from './components/Contact.jsx'
 import Navbar from './components/navbar/Navbar'
 
@@ -18,6 +19,8 @@ export default function Home() {
         <div id="work">
           <Work />
         </div>
+
+        <Education/>
 
         <About />
 

@@ -20,6 +20,13 @@ const MobileNav = ({ isOpen, setIsOpen, navHeight }) => {
         My Work
       </a>
       <a
+        href="#education"
+        onClick={closeNav}
+        className="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-black hover:pl-6 transition-all duration-500"
+      >
+        Education
+      </a>
+      <a
         href="#about"
         onClick={closeNav}
         className="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-black hover:pl-6 transition-all duration-500"

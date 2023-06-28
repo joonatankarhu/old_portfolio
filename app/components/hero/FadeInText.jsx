@@ -13,7 +13,7 @@ const FadeInText = () => {
   useEffect(() => {
     setTimeout(() => {
       setSecondVisible(true)
-    }, 1000)
+    }, 0)
   }, [isVisible])
 
   return (

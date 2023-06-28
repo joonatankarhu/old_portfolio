@@ -11,7 +11,7 @@ const Introduction = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsVisible(true)
-    }, 2500)
+    }, 1000)
   }, [])
 
   useEffect(() => {
@@ -25,28 +25,18 @@ const Introduction = () => {
         }  flex flex-col-reverse  relative items-center justify-center lg:hidden`}
       >
         <div className='w-full  mt-2 mobileX:mt-5'>
-          <p className="lg:hidden text-lg mobileX:text-xl text-gray-800/80 almostIpad:max-w-[600px] almostIpad:tracking-normal">
-            Hi, I am a self-taught Web Developer with a passion for continuous
-            learning and problem-solving. Recently, I completed the development
-            of an eCommerce store and I am currently enrolled full-time in{' '}
+          <p className="lg:hidden text-lg mobileX:text-xl text-gray-900/80 almostIpad:max-w-[600px] almostIpad:tracking-normal">
+            Hi, I am a Fullstack developer with a passion for continuous learning and Web development. Currently, I am enrolled in{' '}  
             <Link
-              href="https://buutti.com/en/it-consulting/"
+              href="https://buuttiedu.com/front-page"
               target="_blank"
               className="font-semibold hover:underline"
             >
               <span>Buutti</span>
             </Link>
-            's Fullstack program.
+            's <i>Fullstack Developer</i> program and I am seeking internship/job opportunities in Fullstack or Frontend Development.
+            
           </p>
-        </div>
-        <div className="w-[50%] extraSmall:max-w-[100px] mb-4 small:max-w-[150px]">
-          <Image
-            src="/joonatan_karhu.jpg"
-            width={250}
-            height={250}
-            className='rounded-full'
-            alt="Picture of the author"
-          />
         </div>
       </div>
 
@@ -57,7 +47,7 @@ const Introduction = () => {
       >
         <div className="hidden lg:block w-[30%] xlg:w-[30%]">
           <Image
-            src="/profile_pic_blackwhite.png"
+            src="/joonatan.png"
             // src="/profile_picture.png"
             width={250}
             height={250}
@@ -71,17 +61,15 @@ const Introduction = () => {
           className={`hidden lg:block lg:mx-12 lg:bg-white lg:rounded-xl lg:border-2 lg:border-gray-400 lg:p-4 lg:z-10`}
         >
           <p className="text-lg text-black/60">
-            Hi, I am a self-taught Web Developer with a passion for continuous
-            learning and problem-solving. Recently, I completed the development
-            of an eCommerce store and I am currently enrolled full-time in{' '}
+          Hi, I am a Fullstack developer with a passion for continuous learning and Web development. Currently, I am enrolled in{' '}  
             <Link
-              href="https://buutti.com/en/it-consulting/"
+              href="https://buuttiedu.com/front-page"
               target="_blank"
               className="font-semibold hover:underline"
             >
               <span>Buutti</span>
             </Link>
-            's Fullstack program.
+            's <i>Fullstack Developer</i> program and I am seeking internship/job opportunities in Fullstack or Frontend Development.
           </p>
         </div>
       </div>
