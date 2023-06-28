@@ -79,7 +79,7 @@ const Navbar = () => {
                 backToTop
                   ? 'opacity-100 transition-opacity duration-5000'
                   : 'opacity-0'
-              } z-[110] block rounded-lg px-2 py-2 text-gray-600/80 font-medium hover:bg-gray-100 hover:text-black text-base`}
+              } z-[110] block rounded-lg text-gray-700/90 font-medium hover:underline hover:text-black text-base`}
             >
               Back to Top
             </a>
