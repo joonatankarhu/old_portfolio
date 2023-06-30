@@ -37,7 +37,7 @@ const HeyBeautyCollections = () => {
   ]
 
   return (
-    <div className="flex flex-col items-start justify-center lg:items-center lg:pt-5">
+    <div className="flex flex-col items-start justify-center lg:items-center pt-5">
       <Link href="https://heybeautycollections.netlify.app/" target="_blank">
         <div
           className={`relative rounded-md overflow-hidden lg:rounded-lg shadow-lg lg:shadow-xl border-[1.5px] border-gray-200/60 transition-transform duration-300 ${
@@ -60,17 +60,17 @@ const HeyBeautyCollections = () => {
             HeyBeautyCollections
           </h3>
           <p className="text-black/80 mobileX:text-lg lg:text-base">
-            I built an eCommerce clothing store with Next.js, Sanity CMS, Stripe, and TailWindCSS. Sanity allows the client to manage their store, without needing any coding or programming knowledge.
-            <br/>
+            I built an eCommerce clothing store with Next.js, Sanity CMS, Stripe, and TailWindCSS. <br/>Sanity allows the client to manage their store, without needing any coding or programming knowledge.
+            <br/><br/>
             The product pages are dynamic and display relevant product data.
-            The store includes product filtering, categories, there is shopping cart and checkout as well. After purchase, the app notifies both the business owner and the customer about the new purchase through Stripe webhooks and email notifications.
+            The store includes product filtering, categories, there is shopping cart and checkout as well. <br/><br/>After purchase, the app notifies both the business owner and the customer about the new purchase through Stripe webhooks and email notifications.
             <br/>
             I implemented Stripe to handle the payment gateway. The application is responsive to mobile devices, Ipads and computer screens.
           </p>
           <Link
             href="https://heybeautycollections.netlify.app/"
             target="_blank"
-            className="text-white w-full max-w-[200px] text-center font-semibold bg-black hover:bg-blue-700 transition-all duration-300 py-2 rounded-md mt-1 smaller:py-2 smaller:text-base lessSmall:mt-3 lessSmall:mb-4 mobileX:py-3 almostIpad:max-w-[400px] lg:max-w-[300px]"
+            className="text-white w-full max-w-[200px] text-center font-semibold bg-black hover:bg-blue-700 transition-all duration-300 py-2 rounded-md mt-1 smaller:py-2 smaller:text-base lessSmall:mt-3 lessSmall:mb-4 my-3 mobileX:py-3 almostIpad:max-w-[400px] lg:max-w-[300px]"
           >
             Live demo
           </Link>
