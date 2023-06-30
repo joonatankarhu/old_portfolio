@@ -60,7 +60,7 @@ const Introduction = () => {
         <div
           className={`hidden lg:block lg:mx-12 lg:bg-white lg:rounded-xl lg:border-2 lg:border-gray-400 lg:p-4 lg:z-10`}
         >
-          <p className="text-lg text-black/60">
+          <p className="text-lg text-black/80">
           Hi, I am a Fullstack developer with a passion for continuous learning and Web development. Currently, I am enrolled in{' '}  
             <Link
               href="https://buuttiedu.com/front-page"

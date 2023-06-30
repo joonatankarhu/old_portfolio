@@ -3,8 +3,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
+import SmallTitle from '../SmallTitle'
 
-const WorkItem = () => {
+const HeyBeautyCollections = () => {
   const [isHovered, setIsHovered] = useState(false)
 
   const skills = [
@@ -36,10 +37,10 @@ const WorkItem = () => {
   ]
 
   return (
-    <div className="flex flex-col items-start justify-center lg:items-center lg:pt-10">
+    <div className="flex flex-col items-start justify-center lg:items-center lg:pt-5">
       <Link href="https://heybeautycollections.netlify.app/" target="_blank">
         <div
-          className={`relative rounded-md overflow-hidden lg:rounded-lg shadow-lg lg:shadow-xl lg:border-t-[1.5px] lg:border-gray-200/60 transition-transform duration-300 ${
+          className={`relative rounded-md overflow-hidden lg:rounded-lg shadow-lg lg:shadow-xl border-[1.5px] border-gray-200/60 transition-transform duration-300 ${
             isHovered ? 'scale-[102%] lg:scale-[102%]' : 'scale-[100%] lg:scale-[100%]'
           }`}
           onMouseEnter={() => setIsHovered(true)}
@@ -58,7 +59,7 @@ const WorkItem = () => {
           <h3 className="font-bold text-xl smaller:text-2xl almostIpad:text-3xl md:text-4xl lg:mb-5">
             HeyBeautyCollections
           </h3>
-          <p className="text-black mobileX:text-lg lg:text-base">
+          <p className="text-black/80 mobileX:text-lg lg:text-base">
             I built an eCommerce clothing store with Next.js, Sanity CMS, Stripe, and TailWindCSS. Sanity allows the client to manage their store, without needing any coding or programming knowledge.
             <br/>
             The product pages are dynamic and display relevant product data.
@@ -69,15 +70,13 @@ const WorkItem = () => {
           <Link
             href="https://heybeautycollections.netlify.app/"
             target="_blank"
-            className="text-white w-full text-center font-semibold bg-black hover:bg-blue-700 transition-all duration-300 py-2 rounded-md mt-4 smaller:py-2 smaller:text-base lessSmall:mt-6 lessSmall:mb-4 mobileX:py-3 almostIpad:max-w-[400px] lg:max-w-[300px]"
+            className="text-white w-full max-w-[200px] text-center font-semibold bg-black hover:bg-blue-700 transition-all duration-300 py-2 rounded-md mt-1 smaller:py-2 smaller:text-base lessSmall:mt-3 lessSmall:mb-4 mobileX:py-3 almostIpad:max-w-[400px] lg:max-w-[300px]"
           >
             Live demo
           </Link>
         </div>
         <div className="lg:w-[20%] lg:flex lg:flex-wrap">
-          <h4 className="font-medium text-xl smaller:text-2xl md:text-3xl mt-5 lg:mt-0">
-            Technologies
-          </h4>
+          <SmallTitle title='Technologies' />
           <div className="flex flex-row flex-wrap content-start lg:justify-center justify-start items-center gap-4 smaller:gap-6 text-base font-semibold w-full mt-4">
             {skills &&
               skills.map((skill) => (
@@ -95,4 +94,4 @@ const WorkItem = () => {
   )
 }
 
-export default WorkItem
+export default HeyBeautyCollections
