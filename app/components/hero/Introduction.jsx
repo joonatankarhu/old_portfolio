@@ -34,7 +34,7 @@ const Introduction = () => {
             >
               <span>Buutti</span>
             </Link>
-            's <i>Fullstack Developer</i> program and I am seeking internship/job opportunities in Fullstack or Frontend Development.
+            's Fullstack Developer program and I am seeking internship/job opportunities in Fullstack or Frontend Development.
             
           </p>
         </div>

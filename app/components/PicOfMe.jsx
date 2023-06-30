@@ -4,7 +4,7 @@ import Image from 'next/image'
 const PicOfMe = () => {
   return (
     <div className="lg:hidden w-full flex items-center justify-center mt-3">
-      <div className="w-[40%] extraSmall:max-w-[80px] small:max-w-[100px]">
+      <div className="w-[35%] extraSmall:max-w-[80px] small:max-w-[80px]">
         <Image
           src="/joonatan_karhu.jpg"
           width={250}

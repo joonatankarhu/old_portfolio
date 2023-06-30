@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const Contact = () => {
   return (
-    <div className='lessSmall:text-lg flex flex-col lg:items-start lg:font-semibold flex-wrap gap-1 lg:gap-2 items-start justify-center w-full lg:text-xl'>
+    <div className='lessSmall:text-lg flex flex-col lg:items-start lg:font-semibold flex-wrap gap-2 items-center justify-center w-full lg:text-xl pb-14'>
       <Link
         href="mailto:joonatan.karhu@outlook.com"
         className="hover:underline hover:text-black font-semibold"
