@@ -75,15 +75,20 @@ const HeyBeautyCollections = () => {
           <Link
             href="https://heybeautycollections.netlify.app/"
             target="_blank"
-            className="text-white w-full text-center font-semibold bg-black hover:bg-blue-700 transition-all duration-300 py-2 rounded-md mt-1 smaller:py-2 smaller:text-base lessSmall:mt-3 lessSmall:mb-4 my-3 mobileX:py-3 almostIpad:max-w-[400px] lg:max-w-[300px]"
+            className="hidden lg:block text-white w-full text-center font-semibold bg-black hover:bg-blue-700 transition-all duration-300 py-2 rounded-md mt-1 smaller:py-2 smaller:text-base lessSmall:mt-3 lessSmall:mb-4 my-3 mobileX:py-3 almostIpad:max-w-[400px] lg:max-w-[300px]"
           >
             Live demo
           </Link>
         </div>
         <div className="lg:w-[20%] lg:flex lg:flex-wrap">
-          <SmallTitle title='
-Project technologies:' />
-          <div className="flex flex-row flex-wrap content-start lg:justify-center justify-start items-center gap-4 smaller:gap-6 text-base font-semibold w-full mt-4">
+          <div className='lg:hidden mt-3'></div>
+          <div className='lg:hidden'>
+            <SmallTitle title='Project technologies:' />
+          </div>
+          <div className='hidden lg:block'>
+            <SmallTitle title='Technologies:' />
+          </div>
+          <div className="flex flex-row flex-wrap content-start lg:justify-center justify-start items-center gap-4 smaller:gap-6 text-base font-semibold w-full mt-4 lg:mt-0">
             {skills &&
               skills.map((skill) => (
                 <div className="w-full smaller:w-[45%] small:w-[45%] lg:w-[100%] flex justify-start content-start items-center gap-[6px] smaller:gap-2 lg:gap-3">
@@ -93,6 +98,13 @@ Project technologies:' />
                   <p>{skill.name}</p>
                 </div>
               ))}
+              <Link
+                href="https://heybeautycollections.netlify.app/"
+                target="_blank"
+                className="lg:hidden w-full text-white text-center font-semibold bg-black hover:bg-blue-700 transition-all duration-300 py-2 rounded-md mt-1 smaller:py-2 smaller:text-base lessSmall:mt-3 lessSmall:mb-4 my-3 mobileX:py-3 almostIpad:max-w-[400px]"
+              >
+                Live demo
+              </Link>
           </div>
           
         </div>

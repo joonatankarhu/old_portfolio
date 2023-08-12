@@ -4,22 +4,19 @@ import MobileNav from './MobileNav'
 import DeskNav from './DeskNav'
 
 import { useEffect, useRef, useState } from 'react'
+import Image from 'next/image'
 
 const Navbar = () => {
   const [navHeight, setNavHeight] = useState(0)
 
   const [prevScrollPos, setPrevScrollPos] = useState(0)
   const [visible, setVisible] = useState(true)
-  const [backToTop, setBackToTop] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset
 
       setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10)
-      if (currentScrollPos > 500) {
-        setBackToTop(true)
-      }
       setPrevScrollPos(currentScrollPos)
     }
 
@@ -63,28 +60,28 @@ const Navbar = () => {
       </div>
       <div
         ref={dropdown}
-        className="lg:hidden fixed top-0 left-0 right-0 z-[20] bg-white"
+        className="lg:hidden fixed top-0 left-0 right-0 z-[20] bg-white "
       >
         <div
           ref={componentRef}
           className="lg:hidden flex relative items-center w-full px-5 py-2 shadow-sm"
         >
-          {backToTop && (
-            <a
-              href="#home"
-              onClick={() => {
-                setIsOpen(false)
-              }}
-              className={`${
-                backToTop
-                  ? 'opacity-100 transition-opacity duration-5000'
-                  : 'opacity-0'
-              } z-[110] block rounded-lg text-gray-700/90 font-medium hover:underline hover:text-black text-base`}
-            >
-              Back to Top
-            </a>
-          )}
-
+          <a href="#home">
+            <div className='flex items-center '>
+              <div className='max-w-[43px] z-[100]'>
+                  <Image
+                    src="/icon.png"
+                    width={100}
+                    height={100}
+                    alt="Picture of the author"
+                    className='rounded-full'
+                  />
+              </div>
+              <div className='font-bold ml-3 text-xl'>
+                <p>Joonatan Karhu</p>
+              </div>
+            </div>
+          </a>
           <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
         {isOpen && (

@@ -7,15 +7,14 @@ const MobileNav = ({ isOpen, setIsOpen, navHeight }) => {
 
   return (
     <div
-      className={`lg:hidden bg-white z-50 fixed top-0 left-0 w-full font-medium shadow-md border-b-2 border-gray-700/20 px-1 text-lg transition-transform duration-500 transform ${
+      className={`lg:hidden z-50 fixed w-full font-medium shadow-md border-b-[1px] bg-white border-gray-700/20 text-lg transition-transform duration-500 transform mt-[${navHeight}px] ${
         isOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
       }`}
-      style={{ paddingTop: `${navHeight}px` }}
     >
       <a
         href="#work"
         onClick={closeNav}
-        className="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-black hover:pl-6 transition-all duration-500"
+        className="block px-4 py-2 text-gray-800 hover:bg-gray-200 hover:text-black hover:pl-6 transition-all duration-500"
       >
         My Work
       </a>
