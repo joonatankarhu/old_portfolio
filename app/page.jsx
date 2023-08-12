@@ -6,42 +6,42 @@ import Education from './components/Education'
 import Contact from './components/Contact.jsx'
 import Navbar from './components/navbar/Navbar'
 
-import SectionWrapper from './components/SectionWrapper'
-import SubTitle from './components/SubTitle'
+import Section from './components/Section'
+import SectionTitle from './components/SectionTitle'
 import HeyBeautyCollections from './components/work/HeyBeautyCollections'
 
 export default function Home() {
 
   return (
-    <div>
+    <>
       <Navbar />
 
       <main className="flex min-h-screen flex-col items-center justify-center px-3  lessSmall:px-5 md:px-8 lg:px-10 mt-[56px] scroll-smooth lg:pb-10">
         
         <Hero />
 
-        <SectionWrapper id="work">
-          <SubTitle title={'My Work'} />
+        <Section id="work">
+          <SectionTitle title={'My Work'} />
           <HeyBeautyCollections />
-        </SectionWrapper>
+        </Section>
 
-        <SectionWrapper id="education">
-          <SubTitle title={'Education'} />
+        <Section id="education">
+          <SectionTitle title={'Education'} />
           <Education/>
-        </SectionWrapper>
+        </Section>
 
 
-        <SectionWrapper id="about">
-          <SubTitle title={'About'} />
+        <Section id="about">
+          <SectionTitle title={'About Me'} />
           <About />
-        </SectionWrapper>
+        </Section>
 
-        <SectionWrapper id="contact">
-          <SubTitle title={'Get in touch'} />
+        <Section id="contact">
+          <SectionTitle title={'Get in touch'} />
           <Contact />
-        </SectionWrapper>
+        </Section>
 
       </main>
-    </div>
+    </>
   )
 }
