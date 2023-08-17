@@ -1,23 +1,22 @@
-import Image from 'next/image'
 import Link from "next/link"
 import AboutMeSubTitle from './AboutMeSubTitle'
 
 const CardAboutMe = () => {
   return (
-    <div className="lg:hidden w-full flex flex-wrap items-center justify-center mt-3">
+    <div className="lg:border-2 lg:rounded-md lg:p-5 w-full flex flex-wrap items-center justify-center mt-3">
         <div className="text-black">
           <AboutMeSubTitle 
             subTitle="Introduction" 
           />
-          <p>I am a Full-stack Developer and my background includes self-studies, project development, design and a six month Fullstack Development program. At the moment I am working as a Frontend Developer intern at <strong>Riots Global</strong>.</p>
+          <p>My name is Joonatan Karhu. I am a Full-stack Developer and my background includes self-studies, project development, design and a six month Fullstack Development program. At the moment I am working as a Frontend Developer intern at <strong>Riots Global</strong>.</p>
         <br/>
         <AboutMeSubTitle 
           subTitle="Fullstack Program" 
         />
         <p>This is a six month fullstack development program at <Link href="https://buuttiedu.com/front-page" target="_blank" className="font-semibold hover:underline">Buutti Education</Link>. 
         <br/>
-        Which included many essential aspects and skills that are needed as a Fullstack developer.<br/></p>
-        <strong className='block mt-2'>
+        The studies includes many essential aspects and skills that are needed as a Fullstack developer<br/></p>
+        <strong className='block mt-2 mb-1 lg:mb-2 lg:mt-4'>
           Subjects:
         </strong> 
         <ul className='list-disc relative left-5'>
@@ -31,7 +30,7 @@ const CardAboutMe = () => {
         <AboutMeSubTitle 
           subTitle="Internship" />
         <p>My internship is to work as a Frontend Developer for three months at <strong>Riots Global</strong>.
-        <strong className='block mt-2'>Main tasks:</strong></p>
+        <strong className='block mt-2 lg:mt-4'>Main tasks:</strong></p>
         <ul className='list-disc relative left-5'>
           <li>Improve their software UI and UX.</li>
           <li>Plan, design and implement new features</li>
