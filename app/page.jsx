@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <Navbar />
 
-      <main className="flex min-h-screen flex-col items-center justify-center px-3  lessSmall:px-5 md:px-8 lg:px-10 mt-[56px] scroll-smooth lg:pb-10">
+      <main className="flex min-h-screen flex-col items-center justify-center px-3  lessSmall:px-5 md:px-8 lg:px-10 mt-[56px] scroll-smooth lg:pb-0">
         
         <Hero />
 

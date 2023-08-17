@@ -3,9 +3,9 @@ import SmallTitle from "./SmallTitle"
 
 const Education = () => {
   return (
-    <div className="w-full flex flex-col mt-5">
+    <div className="lg:border-2 lg:rounded-md lg:p-5 w-full flex flex-col mt-5">
       <div className="text-xl font-semibold">
-        <h4 className="text-2xl">
+        <h4 className="text-2xl lg:text-3xl">
           Fullstack Developer
         </h4>
         <p className="text-lg font-normal">
