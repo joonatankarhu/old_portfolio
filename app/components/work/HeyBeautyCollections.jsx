@@ -27,11 +27,11 @@ const HeyBeautyCollections = () => {
       imageSrc: 'https://img.icons8.com/fluency/100/null/node-js.png',
     },
     {
-      name: 'Tailwind',
+      name: 'TailwindCSS',
       imageSrc: 'https://img.icons8.com/color/48/000000/tailwindcss.png',
     },
     {
-      name: 'Sanity',
+      name: 'Sanity CMS',
       imageSrc: '/sanity.svg',
     },
   ]
@@ -56,26 +56,25 @@ const HeyBeautyCollections = () => {
       </Link>
       <div className="lg:flex mt-5 lg:mt-10">
         <div className="flex flex-col items-start gap-1 lg:w-[80%] lg:pr-20">
-          <h3 className="font-bold text-xl smaller:text-2xl almostIpad:text-3xl md:text-4xl lg:mb-5">
+          <h3 className="font-bold text-xl smaller:text-2xl almostIpad:text-3xl md:text-4xl md:mb-1 lg:mb-2">
             HeyBeautyCollections
           </h3>
+          <p className='mb-2 md:text-lg'>Role: <span className='text-red-500'><strong>Full-stack Developer</strong></span></p>
           <p className="text-black/80 mobileX:text-lg lg:text-base">
-            I built an eCommerce clothing store with Next.js, Sanity CMS, Stripe, and TailWindCSS. 
+            I built a clothing store for HeyBeautyCollections. I used Next.js, TypeScript, Node, Sanity CMS, Stripe and TailWindCSS. 
+            The business owner did not have coding knowledge, so I implemented Sanity CMS as a backend, to allow the owner to manage their store and products.
             <br/>
-            Sanity allows the client to manage their store, without needing any coding or programming knowledge.
+            The application has dynamic data and responsive pages and layouts. The store includes product filtering and categories.
             <br/><br/>
-            The product pages are dynamic and display relevant product data.
-            The store includes product filtering, categories, there is shopping cart and checkout as well. 
-            <br/><br/>
-            After purchase, the app notifies both the business owner and the customer about the new purchase through Stripe webhooks and email notifications.
+            After an purchase, the owner and the customer receives a receipt of the purchase to their email inbox through Stripe webhooks.
             <br/>
             <br/>
-            Stripe handles payment and the application is responsive to mobile devices, Ipads and computer screens.
+            The application is optimized for mobile devices but is also responsive to larger devices.
           </p>
           <Link
             href="https://heybeautycollections.netlify.app/"
             target="_blank"
-            className="hidden lg:block text-white w-full text-center font-semibold bg-black hover:bg-blue-700 transition-all duration-300 py-2 rounded-md mt-1 smaller:py-2 smaller:text-base lessSmall:mt-3 lessSmall:mb-4 my-3 mobileX:py-3 almostIpad:max-w-[400px] lg:max-w-[300px]"
+            className="hidden lg:block text-white w-full text-center font-bold bg-black hover:bg-red-500 transition-all duration-300 py-2 rounded-md mt-1 smaller:py-2 smaller:text-base lessSmall:mt-3 lessSmall:mb-4 my-3 mobileX:py-3 almostIpad:max-w-[400px] lg:max-w-[300px]"
           >
             Live demo
           </Link>
@@ -85,10 +84,10 @@ const HeyBeautyCollections = () => {
           <div className='lg:hidden'>
             <SmallTitle title='Project technologies:' />
           </div>
-          <div className='hidden lg:block'>
+          {/* <div className='hidden lg:block'>
             <SmallTitle title='Technologies:' />
-          </div>
-          <div className="flex flex-row flex-wrap content-start lg:justify-center justify-start items-center gap-4 smaller:gap-6 text-base font-semibold w-full mt-4 lg:mt-0">
+          </div> */}
+          <div className="flex flex-row flex-wrap content-start lg:justify-center justify-start items-center gap-4 smaller:gap-5 lg:gap-4 text-base font-semibold w-full mt-4 lg:mt-0">
             {skills &&
               skills.map((skill) => (
                 <div className="w-full smaller:w-[45%] small:w-[45%] lg:w-[100%] flex justify-start content-start items-center gap-[6px] smaller:gap-2 lg:gap-3">

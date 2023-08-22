@@ -3,19 +3,19 @@ import AboutMeSubTitle from './AboutMeSubTitle'
 
 const CardAboutMe = () => {
   return (
-    <div className="lg:border-2 lg:rounded-md lg:p-5 w-full flex flex-wrap items-center justify-center mt-3">
+    <div className="w-full flex flex-wrap items-center justify-center mt-3">
         <div className="text-black">
           <AboutMeSubTitle 
             subTitle="Introduction" 
           />
-          <p>My name is Joonatan Karhu. I am a Full-stack Developer and my background includes self-studies, project development, design and a six month Fullstack Development program. At the moment I am working as a Frontend Developer intern at <strong>Riots Global</strong>.</p>
+          <p>My name is Joonatan Karhu. I am a Full-stack Developer and my background includes self-studies, project development, design and a six month Full-stack Development program. At the moment I am working as a Frontend Developer intern at <strong>Riots Global</strong>.</p>
         <br/>
         <AboutMeSubTitle 
-          subTitle="Fullstack Program" 
+          subTitle="Full-stack Program" 
         />
-        <p>This is a six month fullstack development program at <Link href="https://buuttiedu.com/front-page" target="_blank" className="font-semibold hover:underline">Buutti Education</Link>. 
+        <p>This is a six month Full-stack development program at <Link href="https://buuttiedu.com/front-page" target="_blank" className="font-semibold hover:underline">Buutti Education</Link>. 
         <br/>
-        The studies includes many essential aspects and skills that are needed as a Fullstack developer<br/></p>
+        The studies includes many essential aspects and skills that are needed as a Full-stack developer<br/></p>
         <strong className='block mt-2 mb-1 lg:mb-2 lg:mt-4'>
           Subjects:
         </strong> 
@@ -38,8 +38,8 @@ const CardAboutMe = () => {
         </ul>
         <br/>
         <AboutMeSubTitle 
-          subTitle="Technologies" />
-        <p>I enjoy developing applications with modern JavaScript and CSS frameworks. But I am also very familiar with vanilla HTML, CSS and JavaScript.</p>
+          subTitle="Technology Preferences" />
+        <p>I enjoy developing applications with modern JavaScript and CSS frameworks. But I am also very familiar with vanilla HTML, CSS and JavaScript. I like exploring and learning new tools and languages all the time.</p>
         <div className='flex flex-col gap-3 mt-3'>
           <div>
             <p><strong>Frontend</strong>:</p> 
@@ -51,7 +51,7 @@ const CardAboutMe = () => {
           </div>
           <div>
             <p><strong>Others</strong>:</p> 
-            <p>TypeScript, Next.js, Docker, Cloud Services, CI/CD, Git, SQL, Figma</p>
+            <p>TypeScript, Next.js</p>
           </div>
         </div>
         </div>

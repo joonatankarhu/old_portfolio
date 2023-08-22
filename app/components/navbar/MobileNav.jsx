@@ -16,7 +16,7 @@ const MobileNav = ({ isOpen, setIsOpen, navHeight }) => {
         onClick={closeNav}
         className="block px-4 py-2 text-gray-800 hover:bg-gray-200 hover:text-black hover:pl-6 transition-all duration-500"
       >
-        My Work
+        Work Experience
       </a>
       <a
         href="#education"
