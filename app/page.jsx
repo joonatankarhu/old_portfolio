@@ -21,7 +21,7 @@ export default function Home() {
         <Hero />
 
         <Section id="work">
-          <SectionTitle title={'My Work'} />
+          <SectionTitle title={'Work Experience'} />
           <HeyBeautyCollections />
         </Section>
 

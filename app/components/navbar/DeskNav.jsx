@@ -2,35 +2,35 @@
 const DeskNav = () => {
   return (
     <div
-      className='hidden lg:flex bg-white absolute font-medium w-full shadow-lg z-20 text-lg'
+      className='hidden lg:flex bg-white absolute w-full shadow-md z-20 text-lg'
     >
       <a
         href="#work"
-        className="block px-5 py-4 text-gray-800 hover:bg-gray-200 hover:text-black transition-all duration-500"
+        className="block ml-8 px-3 py-4 text-gray-800 hover:bg-gray-100 hover:text-black transition-all duration-400"
       >
-        My Work
+        Work Experience
       </a>
       <a
         href="#education"
-        className="block px-5 py-4 text-gray-800 hover:bg-gray-200 hover:text-black transition-all duration-500"
+        className="block px-3 py-4 text-gray-800 hover:bg-gray-100 hover:text-black transition-all duration-400"
       >
         Education
       </a>
       <a
         href="#about"
-        className="block px-5 py-4 text-gray-800 hover:bg-gray-200 hover:text-black transition-all duration-500"
+        className="block px-3 py-4 text-gray-800 hover:bg-gray-100 hover:text-black transition-all duration-400"
       >
         About
       </a>
       <a
         href="#contact"
-        className="block px-5 py-4 text-gray-800 hover:bg-gray-200 hover:text-black transition-all duration-500"
+        className="block px-3 py-4 text-gray-800 hover:bg-gray-100 hover:text-black transition-all duration-400"
       >
         Contact
       </a>
       <a
         href="/CV.pdf"
-        className="block px-5 py-4 text-gray-800 hover:bg-gray-200 hover:text-black transition-all duration-500"
+        className="block px-3 py-4 text-gray-800 hover:bg-gray-100 hover:text-black transition-all duration-400"
         download="Joonatan_Karhu_CV"
       >
         Download CV

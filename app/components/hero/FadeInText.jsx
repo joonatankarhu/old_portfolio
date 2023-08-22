@@ -28,7 +28,7 @@ const FadeInText = () => {
             isVisible ? 'animate-fadeLeftToMiddle' : 'opacity-0'
           }`}
         >
-          Fullstack Developer
+          Full-stack Developer
         </h1>
       </div>
       <div className="relative mt-3 smaller:mt-5 w-full small:mt-6 almostIpad:mt-8 md:mt-8 med:mt-12 lg:mt-8 lg:top-[-50px]">
