@@ -59,7 +59,7 @@ const HeyBeautyCollections = () => {
           <h3 className="font-bold text-xl smaller:text-2xl almostIpad:text-3xl md:text-4xl md:mb-1 lg:mb-2">
             HeyBeautyCollections
           </h3>
-          <p className='mb-2 md:text-lg'>Role: <span className='text-red-500'><strong>Full-stack Developer</strong></span></p>
+          <p className='mb-2 md:text-lg'>Role: <span><strong>Full-stack Developer</strong></span></p>
           <p className="text-black/80 mobileX:text-lg lg:text-base">
             I built a clothing store for HeyBeautyCollections. I used Next.js, TypeScript, Node, Sanity CMS, Stripe and TailWindCSS. 
             The business owner did not have coding knowledge, so I implemented Sanity CMS as a backend, to allow the owner to manage their store and products.
