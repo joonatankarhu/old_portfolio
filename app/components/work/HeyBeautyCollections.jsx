@@ -81,9 +81,7 @@ const HeyBeautyCollections = () => {
         </div>
         <div className="lg:w-[20%] lg:flex lg:flex-wrap">
           <div className='lg:hidden mt-3'></div>
-          <div className='lg:hidden'>
-            <SmallTitle title='Project technologies:' />
-          </div>
+          <SmallTitle title='Technologies:' />
           {/* <div className='hidden lg:block'>
             <SmallTitle title='Technologies:' />
           </div> */}

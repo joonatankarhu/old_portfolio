@@ -9,6 +9,7 @@ import Navbar from './components/navbar/Navbar'
 import Section from './components/Section'
 import SectionTitle from './components/SectionTitle'
 import HeyBeautyCollections from './components/work/HeyBeautyCollections'
+import RiotsGlobal from './components/work/RiotsGlobal'
 
 export default function Home() {
 
@@ -21,7 +22,12 @@ export default function Home() {
         <Hero />
 
         <Section id="work">
-          <SectionTitle title={'Work Experience'} />
+          <SectionTitle title={'Professional Experience'} />
+          <RiotsGlobal />
+        </Section>
+
+        <Section>
+          <SectionTitle title={'Projects'} />
           <HeyBeautyCollections />
         </Section>
 
