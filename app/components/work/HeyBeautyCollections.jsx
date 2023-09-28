@@ -54,38 +54,32 @@ const HeyBeautyCollections = () => {
           />
         </div>
       </Link>
-      <div className="lg:flex mt-5 lg:mt-10">
-        <div className="flex flex-col items-start gap-1 lg:w-[80%] lg:pr-20">
+      <div className="lg:flex lg:justify-between mt-5 lg:mt-10">
+        <div className="flex flex-col items-start gap-1 lg:pr-20">
           <h3 className="font-bold text-xl smaller:text-2xl almostIpad:text-3xl md:text-4xl md:mb-1 lg:mb-2">
             HeyBeautyCollections
           </h3>
-          <p className='mb-2 md:text-lg'>Role: <span><strong>Full-stack Developer</strong></span></p>
-          <p className="text-black/80 mobileX:text-lg lg:text-base">
-            I built a clothing store for HeyBeautyCollections. I used Next.js, TypeScript, Node, Sanity CMS, Stripe and TailWindCSS. 
-            The business owner did not have coding knowledge, so I implemented Sanity CMS as a backend, to allow the owner to manage their store and products.
-            <br/>
+          <p className='mb-2 md:text-lg lg:mt-2'>Role: <span><strong>Full-stack Developer</strong></span></p>
+          <p className="text-black/80 mobileX:text-lg lg:text-base lg:max-w-3xl">
+            I built a clothing store with Next.js, TypeScript, Node, Sanity CMS, Stripe and TailWindCSS.
+            I implemented Sanity CMS as a backend, to allow the owner to manage their store and products with ease.
             The application has dynamic data and responsive pages and layouts. The store includes product filtering and categories.
             <br/><br/>
             After an purchase, the owner and the customer receives a receipt of the purchase to their email inbox through Stripe webhooks.
             <br/>
             <br/>
-            The application is optimized for mobile devices but is also responsive to larger devices.
+            The application is optimized for mobile devices but is also responsive to larger devices. This project is not available as a public repository, because I might sell it at some point to a client.
           </p>
           <Link
             href="https://heybeautycollections.netlify.app/"
             target="_blank"
-            className="hidden lg:block text-white w-full text-center font-bold bg-black hover:bg-red-500 transition-all duration-300 py-2 rounded-md mt-1 smaller:py-2 smaller:text-base lessSmall:mt-3 lessSmall:mb-4 my-3 mobileX:py-3 almostIpad:max-w-[400px] lg:max-w-[300px]"
+            className="hidden lg:block text-white w-full text-center font-bold bg-black hover:bg-blue-600 transition-all duration-300 py-2 rounded-md mt-1 smaller:py-2 smaller:text-base lessSmall:mt-3 lessSmall:mb-4 my-3 mobileX:py-3 almostIpad:max-w-[400px] lg:max-w-[200px] lg:mt-8"
           >
             Live demo
           </Link>
         </div>
-        <div className="lg:w-[20%] lg:flex lg:flex-wrap">
-          <div className='lg:hidden mt-3'></div>
-          <SmallTitle title='Technologies:' />
-          {/* <div className='hidden lg:block'>
-            <SmallTitle title='Technologies:' />
-          </div> */}
-          <div className="flex flex-row flex-wrap content-start lg:justify-center justify-start items-center gap-4 smaller:gap-5 lg:gap-4 text-base font-semibold w-full mt-4 lg:mt-0">
+        <div className="lg:max-w-[20%] lg:flex lg:flex-wrap">
+          <div className="flex flex-row flex-wrap content-start lg:justify-center justify-start items-center gap-4 smaller:gap-5 lg:gap-4 text-base font-semibold w-full mt-4 lg:mt-5">
             {skills &&
               skills.map((skill) => (
                 <div className="w-full smaller:w-[45%] small:w-[45%] lg:w-[100%] flex justify-start content-start items-center gap-[6px] smaller:gap-2 lg:gap-3">
@@ -103,9 +97,7 @@ const HeyBeautyCollections = () => {
                 Live demo
               </Link>
           </div>
-          
         </div>
-        
       </div>
     </div>
   )

@@ -1,7 +1,6 @@
 'use client'
 
 import Hero from './components/hero/Hero'
-import About from './components/About'
 import Education from './components/Education'
 import Contact from './components/Contact.jsx'
 import Navbar from './components/navbar/Navbar'
@@ -10,6 +9,7 @@ import Section from './components/Section'
 import SectionTitle from './components/SectionTitle'
 import HeyBeautyCollections from './components/work/HeyBeautyCollections'
 import RiotsGlobal from './components/work/RiotsGlobal'
+import CardAboutMe from './components/CardAboutMe'
 
 export default function Home() {
 
@@ -39,7 +39,7 @@ export default function Home() {
 
         <Section id="about">
           <SectionTitle title={'About Me'} />
-          <About />
+          <CardAboutMe />
         </Section>
 
         <Section id="contact">
