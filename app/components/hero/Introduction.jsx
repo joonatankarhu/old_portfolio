@@ -26,16 +26,7 @@ const Introduction = () => {
       >
         <div className='w-full  mt-2 mobileX:mt-5'>
           <p className="lg:hidden text-lg mobileX:text-xl text-gray-900/80 almostIpad:max-w-[600px] almostIpad:tracking-normal">
-            Hi, I am a Fullstack developer with a passion for continuous learning and Web development. Currently, I am enrolled in{' '}  
-            <Link
-              href="https://buuttiedu.com/front-page"
-              target="_blank"
-              className="font-semibold hover:underline"
-            >
-              <span>Buutti</span>
-            </Link>
-            's Fullstack Developer program and I am seeking job opportunities in Fullstack or Frontend Development.
-            
+            Hello, I am a Fullstack developer with a passion for programming and continuous learning. Currently, I am working at <b>Riots Global Oy</b>
           </p>
         </div>
       </div>
@@ -61,7 +52,7 @@ const Introduction = () => {
           className={`hidden lg:block lg:mx-12 lg:bg-white lg:rounded-xl lg:border-2 lg:border-gray-400 lg:p-4 lg:z-10`}
         >
           <p className="text-lg text-black/80">
-          Hello! I am a Full-stack developer with a passion for Frontend Development and Web Design. Currently, I am working as a Frontend Developer at Riots Global.
+          Hello, I am a Fullstack developer with a passion for programming and continuous learning. Currently, I am working at <b>Riots Global Oy</b>
           </p>
         </div>
       </div>

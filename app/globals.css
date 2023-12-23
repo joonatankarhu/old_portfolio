@@ -10,3 +10,19 @@
 html {
   scroll-behavior: smooth;
 }
+
+
+.dot {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.small-dot {
+  height: 12px;
+  width: 12px;
+  margin: 0px 2.5px;
+  border-radius: 50%;
+  display: inline-block;
+}
