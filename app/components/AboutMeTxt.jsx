@@ -5,7 +5,7 @@ const AboutMeTxt = () => {
     <p className="hidden lg:block text-black/80 mt-6 lg:mt-0">
       My name is Joonatan Karhu, and I am a Fullstack Web Developer with two years of experience in self-studies and project development. 
       <br/>
-      Currently, I am enrolled in an exceptional six-month intensive Full Stack program at <Link href="https://buuttiedu.com/front-page" target="_blank" className="font-semibold hover:underline">Buutti Education</Link>. 
+      Recently I graduated from an amazing six-month Full-Stack program at <Link href="https://buuttiedu.com/front-page" target="_blank" className="font-semibold hover:underline">Buutti Education</Link>. 
       This comprehensive program encompasses various essential aspects, such as writing clean code, testing, collaborating in group projects, honing logical thinking and problem-solving abilities.
       
       <br/><br/>

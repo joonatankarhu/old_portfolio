@@ -9,7 +9,7 @@ At the moment, I am working at Riots Global as a Frontend/Mobile Developer.
 While I have knowledge in full-stack development, I have a very strong passion for <b>Frontend Development</b> and <b>Web design</b>
 <br/><br/>
 My mother tongue is Swedish, and I speak fluent Finnish and English. I like meeting people from different places all over the world.
-My favorite technology so are is <b>Vue.js</b>.
+My favorite technology is <b>Vue.js</b>.
 <br/><br/>
 I started my programming journey in 2020 and web development became my passion very quickly. I have been doing self studies and building my own projects since then. I am interested in Web Design and UI/UX.</p>
       </div>
