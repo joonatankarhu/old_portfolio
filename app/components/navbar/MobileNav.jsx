@@ -14,35 +14,35 @@ const MobileNav = ({ isOpen, setIsOpen, navHeight }) => {
       <a
         href="#work"
         onClick={closeNav}
-        className="block px-4 py-2 text-gray-800 hover:bg-gray-200 hover:text-black hover:pl-6 transition-all duration-500"
+        className="block px-4 py-2 text-gray-800 hover:bg-blue-100 hover:text-blue-700 hover:pl-6 transition-all duration-500"
       >
         Work Experience
       </a>
       <a
         href="#education"
         onClick={closeNav}
-        className="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-black hover:pl-6 transition-all duration-500"
+        className="block px-4 py-2 text-gray-800 hover:bg-blue-100 hover:text-blue-700 hover:pl-6 transition-all duration-500"
       >
         Education
       </a>
       <a
         href="#about"
         onClick={closeNav}
-        className="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-black hover:pl-6 transition-all duration-500"
+        className="block px-4 py-2 text-gray-800 hover:bg-blue-100 hover:text-blue-700 hover:pl-6 transition-all duration-500"
       >
         About
       </a>
       <a
         href="#contact"
         onClick={closeNav}
-        className="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-black hover:pl-6 transition-all duration-500"
+        className="block px-4 py-2 text-gray-800 hover:bg-blue-100 hover:text-blue-700 hover:pl-6 transition-all duration-500"
       >
         Contact
       </a>
       <a
         href="/CV.pdf"
         onClick={closeNav}
-        className="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-black hover:pl-6 transition-all duration-500"
+        className="block px-4 py-2 text-gray-800 hover:bg-blue-100 hover:text-blue-700 hover:pl-6 transition-all duration-500"
         download="Joonatan_Karhu_CV"
       >
         Download CV

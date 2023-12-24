@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import './Fade.css'
 import { useEffect, useState } from 'react'
-import Link from 'next/link'
 import './FadeRightToLeft.css'
 
 const Introduction = () => {
@@ -38,7 +37,7 @@ const Introduction = () => {
       >
         <div className="hidden lg:block w-[30%] xlg:w-[30%]">
           <Image
-            src="/joonatan.png"
+            src="/aboutImageMobile_blach_white-modified.png"
             // src="/profile_picture.png"
             width={250}
             height={250}
@@ -46,13 +45,13 @@ const Introduction = () => {
           />
         </div>
         <div className="hidden lg:block relative w-0 h-0 mt-6 z-1">
-          <div className="absolute border-transparent border-solid border-8 transform rotate-45 -translate-x-2 -translate-y-2 bg-gray-400"></div>
+          <div className="absolute border-transparent border-solid border-8 transform rotate-45 -translate-x-2 -translate-y-2 bg-blue-400"></div>
         </div>
         <div
-          className={`hidden lg:block lg:mx-12 lg:bg-white lg:rounded-xl lg:border-2 lg:border-gray-400 lg:p-4 lg:z-10`}
+          className={`hidden lg:block lg:mx-12 lg:bg-white lg:rounded-xl lg:border-2 lg:border-blue-400 lg:p-4 lg:z-10`}
         >
-          <p className="text-lg text-black/80">
-          Hello, I am a Fullstack developer with a passion for programming and continuous learning. Currently, I am working at <b>Riots Global Oy</b>
+          <p className="text-lg text-gray-900/70">
+          Hello, I am a Fullstack developer with a passion for programming and continuous learning. Currently I am working at <b>Riots Global Oy</b>
           </p>
         </div>
       </div>

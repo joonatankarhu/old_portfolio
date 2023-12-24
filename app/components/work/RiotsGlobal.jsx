@@ -39,7 +39,7 @@ const RiotsGlobal = () => {
               
               <h5 className="font-semibold">Frontend Developer</h5>
 
-              <p>I build their mobile application and display data into more user friendly interfaces. I build lots of reuseable vue components.</p>
+              <p>I work on their mobile application and transform data into user friendly interfaces and views. Daily tasks include building lots of reuseable Vue components and working on the UI.</p>
             </div>
           </div>
 
@@ -50,12 +50,12 @@ const RiotsGlobal = () => {
               </div>
             <div className='text-black/80'>
               <h5 className="font-semibold">Frontend Developer Internship</h5>
-              <p>During my internship I worked on the frontend of their Software Application, by creating new designs, reuseable components and new features.</p>
+              <p>I worked on the frontend of their Web Application by implementing new designs, building reuseable components and adding new features.</p>
             </div>
           </div>
 
         </div>
-        <div className='flex flex-col mt-5 md:mt-0 lg:max-w-[20%]'>
+        <div className='flex flex-col mt-8 md:mt-0 lg:max-w-[20%]'>
           <div className="lg:flex lg:flex-wrap">
             <div className="flex flex-row flex-nowrap md:flex-wrap content-start lg:justify-center justify-start items-center gap-4 smaller:gap-5 lg:gap-4 text-base font-semibold w-full md:mt-4">
               {skills &&

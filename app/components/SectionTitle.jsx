@@ -1,6 +1,6 @@
 const SectionTitle = ({ title }) => {
   return (
-    <h3 className="text-3xl extraSmall:text-4xl smaller:text-4xl lg:text-4xl font-bold w-[90%] lg:w-[100%] lg:pb-3 text-black lg:border-b-0 pb-2 lg:mx-0  lg:text-left my- py-5 border-b-2 border-gray-700 relative right-5 lg:right-0">
+    <h3 className="text-3xl extraSmall:text-4xl smaller:text-4xl lg:text-4xl font-bold w-[90%] lg:w-[100%] lg:pb-3 text-black pb-0 lg:mx-0  lg:text-left  py-5 relative right-5 lg:right-0">
       { title }
     </h3>
   )

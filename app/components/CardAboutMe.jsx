@@ -2,16 +2,13 @@ const CardAboutMe = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center mt-3 lg:justify-between lg:items-start lg:flex-row">
       <div className="lg:max-w-3xl">
-      <p className='lg:max-w-3xl text-black/80'>Welcome to my portfolio! My name is Joonatan Karhu and I am a Software Developer.
-<br/><br/>
-At the moment, I am working at Riots Global as a Frontend/Mobile Developer.
-<br/><br/>
-While I have knowledge in full-stack development, I have a very strong passion for <b>Frontend Development</b> and <b>Web design</b>
-<br/><br/>
-My mother tongue is Swedish, and I speak fluent Finnish and English. I like meeting people from different places all over the world.
-My favorite technology is <b>Vue.js</b>.
-<br/><br/>
-I started my programming journey in 2020 and web development became my passion very quickly. I have been doing self studies and building my own projects since then. I am interested in Web Design and UI/UX.</p>
+        <p className='lg:max-w-3xl text-black/80'>
+          Welcome to my portfolio! My name is Joonatan Karhu and I am a Software Developer. I started my programming journey in 2020.
+          At the moment, I am working at Riots Global with their mobile application. I have a very strong passion for <b>Frontend Development</b> and <b>Web design</b>
+          <br/><br/>
+          My mother tongue is Swedish, and I speak fluent Finnish and English as well. I like meeting people from different places all over the world. On my free time I enjoy going to the gym, watching movies and spending time with family.
+          My favorite technology is <b>Vue.js</b>.
+      </p>
       </div>
       <div className="lg:max-w-[30%] lg:mr-[8%]">
         <h4 className='text-2xl font-semibold w-full my-2 lg:mt-0 lg:font-semibold'>Skills</h4>        

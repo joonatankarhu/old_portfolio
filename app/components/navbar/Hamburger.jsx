@@ -17,7 +17,7 @@ const Hamburger = ({ isOpen, setIsOpen }) => {
       <button
         type="button"
         onClick={handleToggle}
-        className={`text-black/70 hover:text-black block focus:outline-none transition-transform duration-1000 `}
+        className={`text-black/70 hover:text-blue-700 block focus:outline-none transition-transform duration-1000 `}
         onMouseEnter={handleHover}
         onMouseLeave={handleHover}
       >

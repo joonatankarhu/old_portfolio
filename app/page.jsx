@@ -22,7 +22,7 @@ export default function Home() {
         <Hero />
 
         <Section id="work">
-          <SectionTitle title={'Professional Experience'} />
+          <SectionTitle title={'Experience'} />
             <RiotsGlobal />
         </Section>
 
