@@ -1,14 +1,14 @@
 'use client'
 
-const RiotsGlobal = () => {
+const Biila = () => {
   const skills = [
     {
-      name: 'Vue.js',
+      name: 'Angular',
       imageSrc:
         'https://img.icons8.com/color/48/vue-js.png',
     },
     {
-      name: 'Quasar.js',
+      name: 'Laravel',
       imageSrc: '/quasar.png',
     }
   ]
@@ -16,15 +16,18 @@ const RiotsGlobal = () => {
     <div className='w-full flex flex-col py-5 md:max-w-4xl'>
       <div className="md:w-full md:flex md:justify-between mb-3 md:mb-0">
         <h4 className="font-bold text-xl md:text-2xl">
-          <a href="https://www.riots.fi/" target="_blank">
-            Riots Global
+
+          <a href="https://biila.io/" target="_blank">
+            Biila
+
           </a>
+
         </h4>
-        <p className='md:hidden text-gray-500'>Oulu, Finland</p>
-        <p className="md:hidden text-gray-500">August 2023 - January 2024</p>
-        <div className="hidden md:block">
-          <p className='text-xl font-semibold text-center'>Oulu, Finland</p>
-          <p className="text-lg">August 2023 - January 2024</p>
+        <p className='md:hidden text-gray-500 '>Oulu, Finland</p>
+        <p className="md:hidden text-gray-500">January 2024 - ongoing</p>
+        <div className="hidden md:block ">
+          <p className=' text-xl font-semibold text-center'>Oulu, Finland</p>
+          <p className="text-lg">January 2024 - continuous</p>
         </div>
 
       </div>
@@ -34,18 +37,20 @@ const RiotsGlobal = () => {
         <div className="flex flex-col gap-4 md:max-w-xl">
           <div className="flex flex-row gap-4">
             <div className="flex flex-col items-center pt-[4px]">
-              <div className="small-dot bg-gray-400"></div>
+              <div className="dot bg-blue-700"></div>
               <div className="px-[1px]  bg-gray-300 h-5/6 mt-2"></div>
             </div>
             <div className='text-black/80'>
 
-              <h5 className="font-semibold">Frontend Developer</h5>
+              <h5 className="font-semibold">Fullstack Developer</h5>
 
-              <p>I built their mobile application from scratch and transformed lots of data into user friendly interfaces. Daily tasks included building lots of reuseable Vue components and design</p>
+              <p className=" text-gray-400">My work here has just started... <br /> I'll provide a description in a few weeks</p>
+
+
             </div>
           </div>
 
-          <div className="flex flex-row gap-4">
+          {/* <div className="flex flex-row gap-4">
             <div className="flex flex-col items-center pt-[4px]">
               <div className="small-dot bg-gray-400"></div>
               <div className="px-[1px]  bg-gray-300 h-5/6 mt-2"></div>
@@ -54,10 +59,10 @@ const RiotsGlobal = () => {
               <h5 className="font-semibold">Frontend Developer Internship</h5>
               <p>I worked on the frontend of their Web Application by implementing new designs, building reuseable components and adding new features.</p>
             </div>
-          </div>
+          </div> */}
 
         </div>
-        <div className='flex flex-col mt-8 md:mt-0 lg:max-w-[20%]'>
+        {/* <div className='flex flex-col mt-8 md:mt-0 lg:max-w-[20%]'>
           <div className="lg:flex lg:flex-wrap">
             <div className="flex flex-row flex-nowrap md:flex-wrap content-start lg:justify-center justify-start items-center gap-4 smaller:gap-5 lg:gap-4 text-base font-semibold w-full md:mt-4">
               {skills &&
@@ -71,10 +76,10 @@ const RiotsGlobal = () => {
                 ))}
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )
 }
 
-export default RiotsGlobal
+export default Biila
