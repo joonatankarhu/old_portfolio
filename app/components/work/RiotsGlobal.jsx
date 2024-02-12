@@ -1,6 +1,11 @@
 'use client'
 
+import { useState } from "react"
+import Image from 'next/image'
+
 const RiotsGlobal = () => {
+  const [isHovered, setIsHovered] = useState(false)
+
   const skills = [
     {
       name: 'Vue.js',
@@ -14,7 +19,7 @@ const RiotsGlobal = () => {
   ]
   return (
     <div className='w-full flex flex-col py-5 md:max-w-4xl'>
-      <div className="md:w-full md:flex md:justify-between mb-3 md:mb-0">
+      <div className="md:w-full md:flex md:justify-between mb-5 md:mb-7">
         <h4 className="font-bold text-xl md:text-2xl">
           <a href="https://www.riots.fi/" target="_blank">
             Riots Global
@@ -29,7 +34,22 @@ const RiotsGlobal = () => {
 
       </div>
 
-      <div className="md:w-full md:flex md:justify-between md:items-start">
+      <div
+        className={`relative rounded-md overflow-hidden lg:rounded-lg shadow-lg lg:shadow-xl border-[1.5px] border-gray-200/60 transition-transform duration-300 ${isHovered ? 'scale-[102%] lg:scale-[102%]' : 'scale-[100%] lg:scale-[100%]'
+          }`}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        <Image
+          src="/riots.jpg"
+          width={1300}
+          height={1300}
+          alt="Project image"
+        />
+      </div>
+
+
+      <div className="md:w-full md:flex md:justify-between md:items-start mt-6 md:mt-10">
 
         <div className="flex flex-col gap-4 md:max-w-xl">
           <div className="flex flex-row gap-4">

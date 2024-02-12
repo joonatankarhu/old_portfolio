@@ -23,12 +23,9 @@ const Introduction = () => {
           }  flex flex-col-reverse  relative items-center justify-center lg:hidden`}
       >
         <div className='w-full  mt-2 mobileX:mt-5'>
-          <p className="lg:hidden text-lg mobileX:text-xl text-gray-900/80 almostIpad:max-w-[600px] almostIpad:tracking-normal">
-            Hello, I am a Fullstack developer with a passion for programming and continuous learning. I work at <b>
-              <a href="https://biila.io/" target="_blank">
-                Biila
-              </a>
-            </b>
+          <p className="lg:hidden text-lg mobileX:text-xl text-gray-900/80 almostIpad:max-w-[600px] almostIpad:tracking-normal"> Hello, I'm a developer with strong passion for programming and continuous learning. I work at  <b><a href="https://biila.io/" target="_blank">
+            Biila Solutions
+          </a></b> as a Full Stack Developer
           </p>
         </div>
       </div>
@@ -53,7 +50,9 @@ const Introduction = () => {
           className={`hidden lg:block lg:mx-12 lg:bg-white lg:rounded-xl lg:border-2 lg:border-gray-900/70 lg:p-4 lg:z-10`}
         >
           <p className="text-lg text-gray-900/70">
-            Hello, I am a Fullstack developer with passion for programming and continuous learning. Currently I work at <b>Biila Oy</b>
+            Hello, I'm a developer with strong passion for programming and continuous learning. I work at <b><a href="https://biila.io/" target="_blank">
+              Biila Solutions
+            </a></b> as a Full Stack Developer
           </p>
         </div>
       </div>
