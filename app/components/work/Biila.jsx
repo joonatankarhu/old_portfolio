@@ -13,12 +13,12 @@ const Biila = () => {
     }
   ]
   return (
-    <div className='w-full flex flex-col py-5 md:max-w-4xl'>
+    <div className='w-full flex flex-col pt-10 md:max-w-4xl'>
       <div className="md:w-full md:flex md:justify-between mb-3 md:mb-0">
         <h4 className="font-bold text-xl md:text-2xl">
 
           <a href="https://biila.io/" target="_blank">
-            Biila
+            Biila Solutions
 
           </a>
 
@@ -44,7 +44,7 @@ const Biila = () => {
 
               <h5 className="font-semibold">Fullstack Developer</h5>
 
-              <p className=" text-gray-400">My work here has just started... <br /> I'll provide a description in a few weeks</p>
+              <p className=" text-gray-400">My work here has just started, I'll provide a description after a while...</p>
 
 
             </div>

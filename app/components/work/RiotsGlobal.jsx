@@ -18,7 +18,7 @@ const RiotsGlobal = () => {
     }
   ]
   return (
-    <div className='w-full flex flex-col py-5 md:max-w-4xl'>
+    <div className='w-full flex flex-col pt-5 pb-2 md:max-w-4xl'>
       <div className="md:w-full md:flex md:justify-between mb-5 md:mb-7">
         <h4 className="font-bold text-xl md:text-2xl">
           <a href="https://www.riots.fi/" target="_blank">
@@ -61,7 +61,7 @@ const RiotsGlobal = () => {
 
               <h5 className="font-semibold">Frontend Developer</h5>
 
-              <p>I built their mobile application from scratch and transformed lots of data into user friendly interfaces. Daily tasks included building lots of reuseable Vue components and design</p>
+              <p>I reworked a native mobile application UI to a new modern Vue Progressive Web App. The image above showcases samples of my work.</p>
             </div>
           </div>
 
@@ -72,7 +72,7 @@ const RiotsGlobal = () => {
             </div>
             <div className='text-black/80'>
               <h5 className="font-semibold">Frontend Developer Internship</h5>
-              <p>I worked on the frontend of their Web Application by implementing new designs, building reuseable components and adding new features.</p>
+              <p>I worked with a web application. Daily tasks were working with design, building reuseable Vue components and sometimes creating new features.</p>
             </div>
           </div>
 
