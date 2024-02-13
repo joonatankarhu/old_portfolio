@@ -36,7 +36,7 @@ const Introduction = () => {
       >
         <div className="hidden lg:block w-[30%] xlg:w-[30%]">
           <Image
-            src="/me.jpg"
+            src="/joona.jpg"
             // src="/profile_picture.png"
             width={250}
             height={250}
