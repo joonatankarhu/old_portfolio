@@ -23,7 +23,7 @@ const Introduction = () => {
           }  flex flex-col-reverse  relative items-center justify-center lg:hidden`}
       >
         <div className='w-full  mt-2 mobileX:mt-5'>
-          <p className="lg:hidden text-lg mobileX:text-xl text-gray-900/80 almostIpad:max-w-[600px] almostIpad:tracking-normal"> Hello, I'm a developer with strong passion for programming and continuous learning. I work at  <b><a href="https://biila.io/" target="_blank">
+          <p className="lg:hidden text-lg mobileX:text-xl text-gray-900/80 almostIpad:max-w-[600px] almostIpad:tracking-normal"> Hello, I am a developer with strong passion for programming and continuous learning. I work at  <b><a href="https://biila.io/" target="_blank">
             Biila Solutions
           </a></b> as a Full Stack Developer
           </p>

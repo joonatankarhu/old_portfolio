@@ -38,15 +38,14 @@ const Biila = () => {
           <div className="flex flex-row gap-4">
             <div className="flex flex-col items-center pt-[4px]">
               <div className="dot bg-blue-700"></div>
-              <div className="px-[1px]  bg-gray-300 h-5/6 mt-2"></div>
             </div>
             <div className='text-black/80'>
 
               <h5 className="font-semibold">Fullstack Developer</h5>
 
-              <p className=" text-gray-400">My work here has just started, I'll provide a description after a while...</p>
-
-
+              <p className="text-gray-600">
+                My role is full-stack developer, while focusing mostly on <b>frontend development</b>, <b>design</b> and <b>user experience</b>.
+              </p>
             </div>
           </div>
 
