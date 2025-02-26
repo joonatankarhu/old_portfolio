@@ -17,8 +17,8 @@ const Biila = () => {
       <div className="md:w-full md:flex md:justify-between mb-3 md:mb-0">
         <h4 className="font-bold text-xl md:text-2xl">
 
-          <a href="https://biila.io/" target="_blank">
-            Biila Solutions
+          <a href="https://flovi.io/" target="_blank">
+            Flovi
 
           </a>
 
@@ -44,7 +44,8 @@ const Biila = () => {
               <h5 className="font-semibold">Fullstack Developer</h5>
 
               <p className="text-gray-600">
-                My role is full-stack developer, while focusing mostly on <b>frontend development</b>, <b>design</b> and <b>user experience</b>.
+                I build responsive frontend applications using Angular, and scalable backend APIs with Laravel and PHP. Day to day tasks include optimizing app structure for scalability and reliability as well as
+                collaborating with logistics and cross-functional teams to deliver user-centric solutions.
               </p>
             </div>
           </div>

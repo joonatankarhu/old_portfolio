@@ -61,7 +61,7 @@ const RiotsGlobal = () => {
 
               <h5 className="font-semibold">Frontend Developer</h5>
 
-              <p>I reworked a native mobile application UI to a new modern Vue Progressive Web App. The image above showcases samples of my work.</p>
+              <p>Rebuilt existing NativeScript app to a Vue/Quasar based PWA with mobile responsiveness.</p>
             </div>
           </div>
 
@@ -72,7 +72,9 @@ const RiotsGlobal = () => {
             </div>
             <div className='text-black/80'>
               <h5 className="font-semibold">Frontend Developer Internship</h5>
-              <p>I worked with a web application. Daily tasks were working with design, building reuseable Vue components and sometimes creating new features.</p>
+              <p>
+                I worked on their existing web app, where I improved design, UI/UX, added new features and created interactive charts using Chart.js.
+              </p>
             </div>
           </div>
 

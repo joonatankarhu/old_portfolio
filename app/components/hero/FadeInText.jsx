@@ -27,7 +27,7 @@ const FadeInText = () => {
            text-gray-800 ${isVisible ? 'animate-fadeLeftToMiddle' : 'opacity-0'
             }`}
         >
-          <span>Fullstack</span> Developer
+          <span>Software</span> Developer
         </h1>
       </div>
       <div className="relative mt-3 smaller:mt-5 w-full small:mt-6 almostIpad:mt-8 md:mt-8 med:mt-12 lg:mt-8 lg:top-[-50px]">
@@ -35,7 +35,7 @@ const FadeInText = () => {
           className={`font-medium md:font-semibold text-2xl extraSmall:text-2xl smaller:text-3xl small:text-4xl almostIpad:text-5xl
           md:text-5xl med:text-6xl lg:text-5xl 
            first-letter:
-            text-gray-400 ${secondVisible ? 'animate-fadeLeftToMiddle' : 'opacity-0'
+            text-gray-600 ${secondVisible ? 'animate-fadeLeftToMiddle' : 'opacity-0'
             }`}
         >
           Joonatan Karhu
