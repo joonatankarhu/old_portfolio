@@ -41,7 +41,7 @@ const HeyBeautyCollections = () => {
         <div
           className="relative rounded-md overflow-hidden lg:rounded-lg shadow-lg lg:shadow-xl border-[1.5px] border-gray-200/60 transition-transform duration-300"
         >
-          <Image
+          <img
             src="/heybeauty.jpg"
             width={1300}
             height={1300}

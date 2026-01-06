@@ -37,7 +37,7 @@ const RiotsGlobal = () => {
       <div
         className="relative rounded-md overflow-hidden lg:rounded-lg shadow-lg lg:shadow-xl border-[1.5px] border-gray-200/60"
       >
-        <Image
+        <img
           src="/riots.jpg"
           width={1300}
           height={1300}

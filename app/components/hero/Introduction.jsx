@@ -32,7 +32,7 @@ const Introduction = () => {
           } hidden  lg:flex lg:flex-col lg:items-center`}
       >
         <div className="hidden lg:block w-[30%] xlg:w-[30%]">
-          <Image
+          <img
             src="/joona.jpg"
             // src="/profile_picture.png"
             width={250}
