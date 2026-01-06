@@ -1,4 +1,7 @@
-'use client'
+"use client"
+
+import ImageSlider from './ImageSlider'
+import Link from 'next/link'
 
 const Biila = () => {
   const skills = [
@@ -13,70 +16,49 @@ const Biila = () => {
     }
   ]
   return (
-    <div className='w-full flex flex-col pt-10 md:max-w-4xl'>
+    <div className='w-full flex flex-col pt-10 md:max-w-5xl'>
       <div className="md:w-full md:flex md:justify-between mb-3 md:mb-0">
-        <h4 className="font-bold text-xl md:text-2xl">
-
-          <a href="https://flovi.io/" target="_blank">
-            Flovi
-
-          </a>
-
-        </h4>
-        <p className='md:hidden text-gray-500 '>Oulu, Finland</p>
-        <p className="md:hidden text-gray-500">January 2024 - ongoing</p>
+        <h4 className="font-bold text-xl md:text-2xl">Flovi</h4>
+        <p className='md:hidden text-gray-500 '>Helsinki, Finland</p>
+        <p className="md:hidden text-gray-500">January 2024 - January 2026</p>
         <div className="hidden md:block ">
-          <p className=' text-xl font-semibold text-center'>Oulu, Finland</p>
-          <p className="text-lg">January 2024 - continuous</p>
+          <p className=' text-xl font-semibold text-center'>Helsinki, Finland</p>
+          <p className="text-lg">January 2024 - January 2026</p>
         </div>
 
       </div>
 
-      <div className="md:w-full md:flex md:justify-between md:items-start">
+      <div className="md:hidden w-full mb-6">
+        <ImageSlider images={["/landing_page_1.png","/landing_page_with_drawer.png","/new_reservation.png","/profile_page.png","/team_members_page.png"]} />
+      </div>
 
-        <div className="flex flex-col gap-4 md:max-w-xl">
-          <div className="flex flex-row gap-4">
-            <div className="flex flex-col items-center pt-[4px]">
-              <div className="dot bg-blue-700"></div>
-            </div>
-            <div className='text-black/80'>
-
-              <h5 className="font-semibold">Fullstack Developer</h5>
-
-              <p className="text-gray-600">
-                I build responsive frontend applications using Angular, and scalable backend APIs with Laravel and PHP. Day to day tasks include optimizing app structure for scalability and reliability as well as
-                collaborating with logistics and cross-functional teams to deliver user-centric solutions.
+      <div className="md:w-full flex flex-col items-start gap-6">
+        {/* Huge, centered slider first on desktop */}
+        <div className="hidden md:flex w-full justify-center mt-8">
+          <ImageSlider 
+            images={["/landing_page_1.png","/landing_page_with_drawer.png","/new_reservation.png","/profile_page.png","/team_members_page.png"]}
+            className="w-full max-w-5xl md:h-[520px] lg:h-[640px] xl:h-[720px] 2xl:h-[800px] shadow-xl rounded-xl"
+          />
+        </div>
+        {/* Description below image on desktop */}
+        <div className="flex flex-row gap-4 w-full mt-4">
+          <div className='text-black/80'>
+            <h5 className="font-semibold">Full-Stack Developer</h5>
+            <div className="text-gray-600 mt-3">
+              <p>
+                I was part of the customer focused team at Flovi, where we rebuilt a few legacy apps into a single, new, more scalable and user-friendly product using <b>Vue.js</b>, <b>TypeScript</b>, <b>TailwindCSS</b> and <b>Laravel</b>. My work also included refactoring old Angular code into improved and scalable solutions. I collaborated closely with cross functional teams: logistics, designers, product managers, and other developer teams to deliver a better experience for users.
+              </p>
+              <p className="mt-3">To read more about the project and see detailed views, click 
+                <Link
+                 href="/flovi"
+                 className="block text-white w-full text-center font-bold bg-black hover:bg-blue-600 transition-all duration-300 py-2 rounded-md mt-1 smaller:py-2 smaller:text-base lessSmall:mt-3 lessSmall:mb-4 my-3 mobileX:py-3 almostIpad:max-w-[400px] lg:max-w-[200px] lg:mt-8"
+                >
+                  Read more
+                </Link>
               </p>
             </div>
           </div>
-
-          {/* <div className="flex flex-row gap-4">
-            <div className="flex flex-col items-center pt-[4px]">
-              <div className="small-dot bg-gray-400"></div>
-              <div className="px-[1px]  bg-gray-300 h-5/6 mt-2"></div>
-            </div>
-            <div className='text-black/80'>
-              <h5 className="font-semibold">Frontend Developer Internship</h5>
-              <p>I worked on the frontend of their Web Application by implementing new designs, building reuseable components and adding new features.</p>
-            </div>
-          </div> */}
-
         </div>
-        {/* <div className='flex flex-col mt-8 md:mt-0 lg:max-w-[20%]'>
-          <div className="lg:flex lg:flex-wrap">
-            <div className="flex flex-row flex-nowrap md:flex-wrap content-start lg:justify-center justify-start items-center gap-4 smaller:gap-5 lg:gap-4 text-base font-semibold w-full md:mt-4">
-              {skills &&
-                skills.map((skill) => (
-                  <div className="w-full smaller:w-[45%] small:w-[45%] lg:w-[100%] flex justify-start content-start items-center gap-[6px] smaller:gap-2 lg:gap-3">
-                    <div className="w-[14%] smaller:w-[20%] lg:w-[10%] min-w-[35px] lg:min-w-[2.4em] small:min-w-[40px]">
-                      <img src={skill.imageSrc} />
-                    </div>
-                    <p>{skill.name}</p>
-                  </div>
-                ))}
-            </div>
-          </div>
-        </div> */}
       </div>
     </div>
   )

@@ -38,13 +38,8 @@ const HeyBeautyCollections = () => {
 
   return (
     <div className="flex flex-col items-start justify-center lg:items-center pt-5">
-      <Link href="https://heybeautycollections.netlify.app/" target="_blank">
         <div
-          className={`relative rounded-md overflow-hidden lg:rounded-lg shadow-lg lg:shadow-xl border-[1.5px] border-gray-200/60 transition-transform duration-300 ${
-            isHovered ? 'scale-[102%] lg:scale-[102%]' : 'scale-[100%] lg:scale-[100%]'
-          }`}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
+          className="relative rounded-md overflow-hidden lg:rounded-lg shadow-lg lg:shadow-xl border-[1.5px] border-gray-200/60 transition-transform duration-300"
         >
           <Image
             src="/heybeauty.jpg"
@@ -53,13 +48,12 @@ const HeyBeautyCollections = () => {
             alt="Project image"
           />
         </div>
-      </Link>
       <div className="lg:flex lg:justify-between mt-5 lg:mt-10">
         <div className="flex flex-col items-start gap-1 lg:pr-20">
           <h3 className="font-bold text-xl smaller:text-2xl almostIpad:text-3xl md:text-4xl md:mb-1 lg:mb-2">
             HeyBeautyCollections
           </h3>
-          <p className='mb-2 md:text-lg lg:mt-2'>Role: <span><strong>Full-stack Developer</strong></span></p>
+          <p className='mb-2 md:text-lg lg:mt-2'><span>Hobby project</span></p>
           <p className="text-black/80 mobileX:text-lg lg:text-base lg:max-w-3xl">
             I built a clothing store with Next.js, TypeScript, Node, Sanity CMS, Stripe and TailWindCSS.
             I implemented Sanity CMS as a backend, to allow the owner to manage their store and products with ease.

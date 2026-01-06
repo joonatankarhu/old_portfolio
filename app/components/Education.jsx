@@ -33,11 +33,11 @@ const Education = () => {
             <h4 className="font-bold text-xl">
               Buutti Oy
             </h4>
-            <h5>Full-stack Developer</h5>
+            <h5>Full-Stack Developer</h5>
           </div>
           <div className="flex flex-col gap-4 lg:gap-6 lg:mb-5">
           <div className="mt-5 lg:max-w-3xl">
-            <p className="text-black/80">This is a full-time, fast phased program that equipped me with comprehensive skills and knowledge about Full-stack Web Development. We built multiple full-stack applications with <b>React.js</b>, <b>Node.js</b>, <b>TypeScript</b> and we hosted them on Azure with CI/CD pipelines and connected them to PostgreSQL databases.</p>
+            <p className="text-black/80">This is a full-time, fast phased program that equipped me with comprehensive skills and knowledge about Full-stack Web Development. We built multiple Full-Stack applications with <b>React.js</b>, <b>Node.js</b>, <b>TypeScript</b> and we hosted them on Azure with CI/CD pipelines and connected them to PostgreSQL databases.</p>
           </div>
           <div className="lg:max-w-3xl">
 

@@ -22,6 +22,12 @@ const DeskNav = () => {
       >
         About
       </a>
+       <a
+        href="#technologies"
+        className="block px-3 py-4 text-gray-800 hover:bg-blue-100 hover:text-blue-700 transition-all duration-400"
+      >
+        Technologies
+      </a>
       <a
         href="#contact"
         className="block px-3 py-4 text-gray-800 hover:bg-blue-100 hover:text-blue-700 transition-all duration-400"

@@ -18,7 +18,7 @@ const RiotsGlobal = () => {
     }
   ]
   return (
-    <div className='w-full flex flex-col pt-5 pb-2 md:max-w-4xl'>
+    <div className='w-full flex flex-col pt-5 pb-2 md:max-w-5xl'>
       <div className="md:w-full md:flex md:justify-between mb-5 md:mb-7">
         <h4 className="font-bold text-xl md:text-2xl">
           <a href="https://www.riots.fi/" target="_blank">
@@ -35,10 +35,7 @@ const RiotsGlobal = () => {
       </div>
 
       <div
-        className={`relative rounded-md overflow-hidden lg:rounded-lg shadow-lg lg:shadow-xl border-[1.5px] border-gray-200/60 transition-transform duration-300 ${isHovered ? 'scale-[102%] lg:scale-[102%]' : 'scale-[100%] lg:scale-[100%]'
-          }`}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
+        className="relative rounded-md overflow-hidden lg:rounded-lg shadow-lg lg:shadow-xl border-[1.5px] border-gray-200/60"
       >
         <Image
           src="/riots.jpg"
@@ -52,32 +49,15 @@ const RiotsGlobal = () => {
       <div className="md:w-full md:flex md:justify-between md:items-start mt-6 md:mt-10">
 
         <div className="flex flex-col gap-4 md:max-w-xl">
+          {/* Mobile: keep timeline bullets and separate roles */}
           <div className="flex flex-row gap-4">
-            <div className="flex flex-col items-center pt-[4px]">
-              <div className="small-dot bg-gray-400"></div>
-              <div className="px-[1px]  bg-gray-300 h-5/6 mt-2"></div>
-            </div>
             <div className='text-black/80'>
-
-              <h5 className="font-semibold">Frontend Developer</h5>
-
-              <p>Rebuilt existing NativeScript app to a Vue/Quasar based PWA with mobile responsiveness.</p>
-            </div>
-          </div>
-
-          <div className="flex flex-row gap-4">
-            <div className="flex flex-col items-center pt-[4px]">
-              <div className="small-dot bg-gray-400"></div>
-              <div className="px-[1px]  bg-gray-300 h-5/6 mt-2"></div>
-            </div>
-            <div className='text-black/80'>
-              <h5 className="font-semibold">Frontend Developer Internship</h5>
+              <h5 className="font-semibold mb-2">Frontend Developer & Internship</h5>
               <p>
-                I worked on their existing web app, where I improved design, UI/UX, added new features and created interactive charts using Chart.js.
+                I joined <b>Riots Global</b> as a Frontend Developer Intern. During my internship I improved their existing web application's UI/UX, added new features and added interactive charts that displayed useful data from IoT devices. After my internship, I started working there as a Frontend Developer, rebuilding their <b>NativeScript</b> app into a modern <b>Vue.js</b> based PWA with full mobile responsiveness.
               </p>
             </div>
           </div>
-
         </div>
         <div className='flex flex-col mt-8 md:mt-0 lg:max-w-[20%]'>
           <div className="lg:flex lg:flex-wrap">

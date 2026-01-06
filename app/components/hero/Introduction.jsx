@@ -10,7 +10,7 @@ const Introduction = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsVisible(true)
-    }, 1000)
+    }, 500)
   }, [])
 
   useEffect(() => {
@@ -23,10 +23,7 @@ const Introduction = () => {
           }  flex flex-col-reverse  relative items-center justify-center lg:hidden`}
       >
         <div className='w-full  mt-2 mobileX:mt-5'>
-          <p className="lg:hidden text-lg mobileX:text-xl text-gray-900/80 almostIpad:max-w-[600px] almostIpad:tracking-normal"> Hello, I am a developer with a strong passion for programming and continuous learning. I work at  <b><a href="https://flovi.io/" target="_blank">
-            Flovi
-          </a></b> as a full-stack Developer
-          </p>
+          <p className="lg:hidden text-lg mobileX:text-xl text-gray-900/80 almostIpad:max-w-[600px] almostIpad:tracking-normal">Hello, I am a developer with a strong passion for web development and continuous learning. I am currently <b>open for work</b></p>
         </div>
       </div>
 
@@ -41,16 +38,14 @@ const Introduction = () => {
             width={250}
             height={250}
             alt="Picture of the author"
-            className='rounded-xl shadow-lg'
+            className='rounded-xl shadow-xl border-[0px]'
           />
         </div>
         <div
           className={`hidden lg:block lg:mx-12 lg:bg-white lg:rounded-xl shadow-md border-[1px] lg:px-5 py-4 lg:z-10 lg:mt-8`}
         >
           <p className="text-lg text-gray-600">
-            Hi, I am a developer with a strong passion for programming and continuous learning. I work at <b><a href="https://flovi.io/" target="_blank" className='text-black'>
-              Flovi
-            </a></b> as a full-stack Developer
+            Hello, I am a developer with a strong passion for web development and continuous learning. I am currently <b>open for work</b>
           </p>
         </div>
       </div>

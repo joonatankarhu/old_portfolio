@@ -1,57 +1,72 @@
+import SectionTitle from './SectionTitle.jsx'
+
 const CardAboutMe = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center mt-3 lg:justify-between lg:items-start lg:flex-row">
+    <div className="w-full flex flex-col items-start justify-center mt-3">
       <div className="lg:max-w-3xl">
         <p className='lg:max-w-3xl text-black/80'>
-          My name is Joonatan Karhu. I started my programming journey in 2020 and I work at Flovi Oy as a full-stack developer. I have a very strong passion for <b>Frontend Development</b> and <b>Web design</b>
+          My name is Joonatan Karhu. I started my programming journey in 2020 and I am a Full-Stack Software Developer. I have a very strong passion for <b>Frontend Development</b> and <b>Web design</b>
           <br /><br />
-          My mother tongue is Swedish and Finnish, and I speak fluent English as well. I like meeting new people. On my free time I enjoy going to the gym and watching movies with my wife.
+         Both Swedish and Finnish are my mother tongue and I speak fluent English. On my free time I like to meet new people, go to the gym and play video games.
         </p>
       </div>
-      <div className="lg:max-w-[30%] lg:mr-[8%]">
-        <h4 className='text-2xl font-semibold w-full my-2 lg:mt-0 lg:font-semibold'>Skills</h4>
-        <div className='lg:hidden'>
-          <p className='text-black/80'>
-            I enjoy learning new technologies. These I have been using so far
-          </p>
-        </div>
-        <div className='flex flex-col gap-3 mt-3'>
-          <div>
-            <p><strong>Frontend</strong>:</p>
-            <p className="lg:hidden">Vue, React, Angular, JavaScript, CSS and TailwindCSS, MUI, Chart.js</p>
-            <ul className="hidden lg:block list-disc pl-5 mt-1">
-              <li>Vue</li>
-              <li>React</li>
+
+      <div id="technologies" className="mt-10 flex flex-col gap-3 items-start">
+       <div className="pl-5 md:pl-0">
+         <SectionTitle title={'Technologies'} />
+       </div>
+      
+        <p className="text-black/80">Here are technologies I have experience with so far. I am always happy to learn new ones!</p>
+      </div>
+
+      <div className="flex flex-col items-center justify-center w-full mt-5">
+        <div className='flex flex-col lg:flex-row gap-8 mt-3'>
+          
+          <div className="py-5 px-10 shadow-lg border rounded-lg bg-white">
+            <p className="text-center"><strong>Frontend</strong></p>
+
+            <ul className="max-w-md flex flex-wrap items-center justify-center gap-2 mt-2 text-sm text-black/90 py-2">
+              <li>Vue.js</li>
+              <li>React.js</li>
               <li>Angular</li>
               <li>JavaScript</li>
+              <li>HTML</li>
               <li>CSS</li>
               <li>TailwindCSS</li>
               <li>Material UI</li>
-              <li>Chart.js</li>
-            </ul>
-          </div>
-          <div>
-            <p><strong>Backend</strong>:</p>
-            <p className="lg:hidden">Laravel, PHP, Node.js, Express.js, PostGreSQL and MySQL</p>
-            <ul className="hidden lg:block list-disc pl-5 mt-1">
-              <li>Laravel</li>
-              <li>PHP</li>
-              <li>Node.js</li>
-              <li>Express.js</li>
-              <li>PostGreSQL</li>
-            </ul>
-          </div>
-          <div>
-            <p><strong>Others</strong>:</p>
-            <p className="lg:hidden">TypeScript, Azure, CI/CD, Agile, Quasar.js, Scrum, Next.js</p>
-            <ul className="hidden lg:block list-disc pl-5 mt-1">
-              <li>TypeScript</li>
-              <li>Azure</li>
-              <li>CI/CD</li>
-              <li>Agile</li>
+              <li>PrimeVue</li>
               <li>Quasar.js</li>
-              <li>Scrum</li>
+              <li>Chart.js</li>
               <li>Next.js</li>
+              <li>Nuxt.js</li>
+            </ul>
+          </div>
+
+          <div className="py-5 px-10 shadow-lg border rounded-lg bg-white">
+            <p className="text-center"><strong>Backend</strong></p>
+
+            <ul className="max-w-md flex flex-wrap items-center justify-center gap-2 mt-2 text-sm text-black/90 py-2">
+              <li>Laravel</li>
+                <li>PHP</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>PostGreSQL</li>
+                <li>MySQL</li>
+                <li>REST APIs</li>
+            </ul>
+          </div>
+
+          <div className="py-5 px-10 shadow-lg border rounded-lg bg-white">
+            <p className='text-center'><strong>Others</strong></p>
+
+            <ul className="max-w-md flex flex-wrap items-center justify-center gap-2 mt-2 text-sm text-black/90 py-2">
+              <li>TypeScript</li>
+              <li>Unit Testing</li>
+              <li>Git/GitHub</li>
+              <li>Docker</li>
+              <li>CI/CD pipelines</li>
+              <li>Agile</li>
+              <li>Scrum</li>
             </ul>
           </div>
         </div>
