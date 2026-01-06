@@ -46,7 +46,7 @@ const Biila = () => {
             <h5 className="font-semibold">Full-Stack Developer</h5>
             <div className="text-gray-600 mt-3">
               <p>
-                I was part of the customer focused team at Flovi, where we rebuilt a few legacy apps into a single, new, more scalable and user-friendly product using <b>Vue.js</b>, <b>TypeScript</b>, <b>TailwindCSS</b> and <b>Laravel</b>. My work also included refactoring old Angular code into improved and scalable solutions. I collaborated closely with cross functional teams: logistics, designers, product managers, and other developer teams to deliver a better experience for users.
+                I was part of the customer focused team at Flovi, where we rebuilt multiple legacy apps into a single, new, more scalable and user-friendly product using <b>Nuxt/Vue.js</b>, <b>TypeScript</b>, <b>TailwindCSS</b> and <b>Laravel</b>. My work also included refactoring old Angular code into improved and scalable solutions. I Designed and implemented RESTful APIs and backend features in Laravel, supporting collaborative projects with smooth integration. I collaborated closely with cross functional teams: logistics, designers, product managers, and other developer teams to deliver a better experience for users.
               </p>
               <p className="mt-3">To read more about the project and see detailed views, click 
                 <Link

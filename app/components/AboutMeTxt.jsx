@@ -1,17 +1,10 @@
-import Link from "next/link"
 
 const AboutMeTxt = () => {
   return (
     <p className="hidden lg:block text-black/80 mt-6 lg:mt-0">
-      My name is Joonatan Karhu, and I am a Fullstack Web Developer with two years of experience in self-studies and project development. 
-      <br/>
-      Recently I graduated from an amazing six-month Full-Stack program at <Link href="https://buuttiedu.com/front-page" target="_blank" className="font-semibold hover:underline">Buutti Education</Link>. 
-      This comprehensive program encompasses various essential aspects, such as writing clean code, testing, collaborating in group projects, honing logical thinking and problem-solving abilities.
-      
-      <br/><br/>
-      When building web applications, I like using modern JavaScript frameworks and libraries for example: <b>React.js</b>, <b>Next.js</b>, <b>Node.js</b>, <b>Express.js</b> and <b>TypeScript</b>. I enjoy working with CSS a lot, and <b>TailwindCSS</b> has become my favorite tool for that.
-      <br/><br/>
-      I speak Finnish and English at a professional level, and Swedish is my mother tongue. In my free time, I enjoy spending quality time with my friends and family, as well as going to the gym and playing computer games.
+      I am a Full-Stack Web Developer born in Finland and raised in Sweden. Currently I'm based in Helsinki, Finland. I enjoy problem solving, learning and building new things, so programming became a natural fit for me. I began programming as a hobby first in 2020, but soon realized that I wanted to turn it into a career. Now I have been working as a professional developer since 2023.
+          <br/><br/>
+         When I'm not coding, I enjoy spending time with friends and family, playing video games, and staying active at the gym. I'm always eager to learn new skills and embrace challenges, both in my personal life and in my career.
       </p>
   )
 }

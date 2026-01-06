@@ -54,7 +54,7 @@ const RiotsGlobal = () => {
             <div className='text-black/80'>
               <h5 className="font-semibold mb-2">Frontend Developer & Internship</h5>
               <p>
-                I joined <b>Riots Global</b> as a Frontend Developer Intern. During my internship I improved their existing web application's UI/UX, added new features and added interactive charts that displayed useful data from IoT devices. After my internship, I started working there as a Frontend Developer, rebuilding their <b>NativeScript</b> app into a modern <b>Vue.js</b> based PWA with full mobile responsiveness.
+                I joined <b>Riots Global</b> as a Frontend Developer Intern. During my internship I improved their existing web application, added new features and created interactive dashboards and visualizations using <b>Chart.js</b>, improving the visibility and clarity of data from IoT devices. After my internship, I started working there as a Frontend Developer, rebuilding their <b>NativeScript</b> app into a modern <b>Vue.js</b> based PWA with full mobile responsiveness.
               </p>
             </div>
           </div>

@@ -5,9 +5,9 @@ const CardAboutMe = () => {
     <div className="w-full flex flex-col items-start justify-center mt-3">
       <div className="lg:max-w-3xl">
         <p className='lg:max-w-3xl text-black/80'>
-          My name is Joonatan Karhu. I started my programming journey in 2020 and I am a Full-Stack Software Developer. I have a very strong passion for <b>Frontend Development</b> and <b>Web design</b>
-          <br /><br />
-         Both Swedish and Finnish are my mother tongue and I speak fluent English. On my free time I like to meet new people, go to the gym and play video games.
+          I am a Full-Stack Web Developer born in Finland and raised in Sweden. Currently I'm based in Helsinki, Finland. I enjoy problem solving, learning and building new things, so programming became a natural fit for me. I began programming as a hobby first in 2020, but soon realized that I wanted to turn it into a career. Now I have been working as a professional developer since 2023.
+          <br/><br/>
+         When I'm not coding, I enjoy spending time with friends and family, playing video games, and staying active at the gym. I'm always eager to learn new skills and embrace challenges, both in my personal life and in my career.
         </p>
       </div>
 
