@@ -69,7 +69,7 @@ const Navbar = () => {
           <a href="#home">
             <div className='flex items-center '>
               <div className='max-w-[43px] z-[100]'>
-                  <Image
+                  <img
                     src="/icon.png"
                     width={100}
                     height={100}
