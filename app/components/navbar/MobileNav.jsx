@@ -39,10 +39,11 @@ const MobileNav = ({ isOpen, setIsOpen, navHeight }) => {
       >
         Contact
       </a>
+
       <a
         href="/CV.pdf"
         onClick={closeNav}
-        className="block px-8 py-2 text-gray-800 hover:bg-blue-100 hover:text-blue-700 hover:pl-10 transition-all duration-500"
+        className="block my-5 px-8 py-2 bg-black text-white font-semibold hover:bg-blue-100 hover:text-blue-700 hover:pl-10 transition-all duration-500"
         download="Joonatan_Karhu_CV"
       >
         Download CV
