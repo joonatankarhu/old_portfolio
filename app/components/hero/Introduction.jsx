@@ -10,7 +10,7 @@ const Introduction = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsVisible(true);
-    }, 500);
+    }, 100);
   }, []);
 
   useEffect(() => {
@@ -32,21 +32,22 @@ const Introduction = () => {
         </div>
       </div>
 
+      <div className="hidden lg:block w-[30%] xlg:w-[30%]">
+        <img
+          src="/joona.jpg"
+          // src="/profile_picture.png"
+          width={250}
+          height={250}
+          alt="Picture of the author"
+          className="rounded-xl shadow-xl border-[0px]"
+        />
+      </div>
+
       <div
         className={`${
           isDeskVisible ? "animate-fadeRightToLeft" : "opacity-0"
         } hidden  lg:flex lg:flex-col lg:items-center`}
       >
-        <div className="hidden lg:block w-[30%] xlg:w-[30%]">
-          <img
-            src="/joona.jpg"
-            // src="/profile_picture.png"
-            width={250}
-            height={250}
-            alt="Picture of the author"
-            className="rounded-xl shadow-xl border-[0px]"
-          />
-        </div>
         <div
           className={`hidden lg:block lg:mx-12 lg:bg-white lg:rounded-xl shadow-md border-[1px] lg:px-5 py-4 lg:z-10 lg:mt-8`}
         >
