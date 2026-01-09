@@ -5,7 +5,7 @@ import DeskNav from "./DeskNav";
 
 import { useEffect, useRef, useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({ isOpen, setIsOpen }) => {
   const [navHeight, setNavHeight] = useState(0);
 
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -22,20 +22,6 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos]);
-
-  const [isOpen, setIsOpen] = useState(false);
-
-  const dropdown = useRef(null);
-  useEffect(() => {
-    if (!isOpen) return;
-    function handleClick(event) {
-      if (dropdown.current && !dropdown.current.contains(event.target)) {
-        setIsOpen(false);
-      }
-    }
-    window.addEventListener("click", handleClick);
-    return () => window.removeEventListener("click", handleClick);
-  }, [isOpen]);
 
   const componentRef = useRef(null);
 
@@ -62,10 +48,7 @@ const Navbar = () => {
       >
         <DeskNav />
       </div>
-      <div
-        ref={dropdown}
-        className="lg:hidden fixed top-0 left-0 right-0 z-[20] bg-white "
-      >
+      <div className="lg:hidden fixed top-0 left-0 right-0 z-[20] bg-white ">
         <div
           ref={componentRef}
           className="lg:hidden flex relative items-center w-full px-8 py-3 shadow-sm"
