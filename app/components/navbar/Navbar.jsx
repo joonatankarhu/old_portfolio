@@ -38,13 +38,18 @@ const Navbar = () => {
   }, [isOpen]);
 
   const componentRef = useRef(null);
-  let componentHeight = 0;
 
   useEffect(() => {
-    if (componentRef.current) {
-      componentHeight = componentRef.current.offsetHeight;
-      setNavHeight(componentHeight);
-    }
+    const updateHeight = () => {
+      if (componentRef.current) {
+        setNavHeight(componentRef.current.offsetHeight);
+      }
+    };
+
+    updateHeight(); // initial measure
+    window.addEventListener("resize", updateHeight);
+
+    return () => window.removeEventListener("resize", updateHeight);
   }, []);
 
   return (
@@ -84,13 +89,11 @@ const Navbar = () => {
           <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
 
-        {isOpen && (
-          <MobileNav
-            isOpen={isOpen}
-            setIsOpen={setIsOpen}
-            navHeight={navHeight}
-          />
-        )}
+        <MobileNav
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+          navHeight={navHeight}
+        />
       </div>
     </>
   );

@@ -1,41 +1,51 @@
-import React from "react";
+"use client";
 
 const MobileNav = ({ isOpen, setIsOpen, navHeight }) => {
-  const closeNav = () => {
-    setIsOpen(false);
-  };
+  const closeNav = () => setIsOpen(false);
 
   return (
     <div
-      className={`lg:hidden z-50 fixed w-full font-medium shadow-md border-b-[1px] bg-white border-gray-700/20 text-lg transition-transform duration-500 transform mt-[${navHeight}px] ${
-        isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
-      }`}
+      style={{ top: navHeight }}
+      className={`
+        lg:hidden fixed left-0 w-full
+        z-40 bg-white shadow-md border-b border-gray-700/20
+        text-lg font-medium
+        transition-all duration-500 ease-in-out
+        ${
+          isOpen
+            ? "opacity-100 translate-y-0 pointer-events-auto"
+            : "opacity-0 -translate-y-6 pointer-events-none"
+        }
+      `}
     >
       <a
         href="#work"
         onClick={closeNav}
-        className="block px-8 py-2 text-gray-800 hover:bg-blue-100 hover:text-blue-700 hover:pl-10 transition-all duration-500"
+        className="block px-8 py-2 transition-all duration-300 hover:bg-blue-100 hover:text-blue-700 hover:pl-10"
       >
         Work Experience
       </a>
+
       <a
         href="#education"
         onClick={closeNav}
-        className="block px-8 py-2 text-gray-800 hover:bg-blue-100 hover:text-blue-700 hover:pl-10 transition-all duration-500"
+        className="block px-8 py-2 transition-all duration-300 hover:bg-blue-100 hover:text-blue-700 hover:pl-10"
       >
         Education
       </a>
+
       <a
         href="#about"
         onClick={closeNav}
-        className="block px-8 py-2 text-gray-800 hover:bg-blue-100 hover:text-blue-700 hover:pl-10 transition-all duration-500"
+        className="block px-8 py-2 transition-all duration-300 hover:bg-blue-100 hover:text-blue-700 hover:pl-10"
       >
         About
       </a>
+
       <a
         href="#contact"
         onClick={closeNav}
-        className="block px-8 py-2 text-gray-800 hover:bg-blue-100 hover:text-blue-700 hover:pl-10 transition-all duration-500"
+        className="block px-8 py-2 transition-all duration-300 hover:bg-blue-100 hover:text-blue-700 hover:pl-10"
       >
         Contact
       </a>
@@ -43,8 +53,8 @@ const MobileNav = ({ isOpen, setIsOpen, navHeight }) => {
       <a
         href="/CV.pdf"
         onClick={closeNav}
-        className="block my-5 px-8 py-2 bg-black text-white font-semibold hover:bg-blue-100 hover:text-blue-700 hover:pl-10 transition-all duration-500"
-        download="Joonatan_Karhu_CV"
+        download
+        className="block px-8 py-2 transition-all duration-300 hover:bg-blue-100 hover:text-blue-700 hover:pl-10"
       >
         Download CV
       </a>
