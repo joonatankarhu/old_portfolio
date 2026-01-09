@@ -1,60 +1,59 @@
-'use client'
-import Hamburger from './Hamburger'
-import MobileNav from './MobileNav'
-import DeskNav from './DeskNav'
+"use client";
+import Hamburger from "./Hamburger";
+import MobileNav from "./MobileNav";
+import DeskNav from "./DeskNav";
 
-import { useEffect, useRef, useState } from 'react'
-import Image from 'next/image'
+import { useEffect, useRef, useState } from "react";
 
 const Navbar = () => {
-  const [navHeight, setNavHeight] = useState(0)
+  const [navHeight, setNavHeight] = useState(0);
 
-  const [prevScrollPos, setPrevScrollPos] = useState(0)
-  const [visible, setVisible] = useState(true)
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset
+      const currentScrollPos = window.pageYOffset;
 
-      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10)
-      setPrevScrollPos(currentScrollPos)
-    }
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+      setPrevScrollPos(currentScrollPos);
+    };
 
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [prevScrollPos])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos]);
 
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
-  const dropdown = useRef(null)
+  const dropdown = useRef(null);
   useEffect(() => {
-    if (!isOpen) return
+    if (!isOpen) return;
     function handleClick(event) {
       if (dropdown.current && !dropdown.current.contains(event.target)) {
-        setIsOpen(false)
+        setIsOpen(false);
       }
     }
-    window.addEventListener('click', handleClick)
-    return () => window.removeEventListener('click', handleClick)
-  }, [isOpen])
+    window.addEventListener("click", handleClick);
+    return () => window.removeEventListener("click", handleClick);
+  }, [isOpen]);
 
-  const componentRef = useRef(null)
-  let componentHeight = 0
+  const componentRef = useRef(null);
+  let componentHeight = 0;
 
   useEffect(() => {
     if (componentRef.current) {
-      componentHeight = componentRef.current.offsetHeight
-      setNavHeight(componentHeight)
+      componentHeight = componentRef.current.offsetHeight;
+      setNavHeight(componentHeight);
     }
-  }, [])
+  }, []);
 
   return (
     <>
       <div
         className={`hidden lg:flex fixed z-50 top-0 w-full bg-white transition-all duration-500 ${
-          visible ? 'opacity-100 h-auto' : 'opacity-0 h-0'
+          visible ? "opacity-100 h-auto" : "opacity-0 h-0"
         }`}
-        style={{ height: visible ? `${navHeight}px` : '0' }}
+        style={{ height: visible ? `${navHeight}px` : "0" }}
       >
         <DeskNav />
       </div>
@@ -64,26 +63,27 @@ const Navbar = () => {
       >
         <div
           ref={componentRef}
-          className="lg:hidden flex relative items-center w-full px-5 py-2 shadow-sm"
+          className="lg:hidden flex relative items-center w-full px-8 py-3 shadow-sm"
         >
           <a href="#home">
-            <div className='flex items-center '>
-              <div className='max-w-[43px] z-[100]'>
-                  <img
-                    src="/icon.png"
-                    width={100}
-                    height={100}
-                    alt="Picture of the author"
-                    className='rounded-full'
-                  />
+            <div className="flex items-center ">
+              <div className="max-w-[42px] z-[100]">
+                <img
+                  src="/icon.png"
+                  width={90}
+                  height={90}
+                  alt="Picture of the author"
+                  className="rounded-full"
+                />
               </div>
-              <div className='font-bold ml-3 text-xl'>
+              <div className="font-semibold ml-3 text-xl">
                 <p>Joonatan Karhu</p>
               </div>
             </div>
           </a>
           <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
+
         {isOpen && (
           <MobileNav
             isOpen={isOpen}
@@ -93,7 +93,7 @@ const Navbar = () => {
         )}
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

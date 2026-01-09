@@ -21,12 +21,12 @@ const FadeInText = () => {
       <div className="w-full relative mt-10 almostIpad:mt-14 md:mt-20 lg:mt-0 lg:top-[-50px]">
         <h1
           className={`font-semibold text-4xl smaller:text-5xl small:text-6xl mobileX:text-6xl almostIpad:pr-10 closeIpad:pr-0
-          closeIpad:text-8xl 
+          closeIpad:text-8xl xlg:text-8xl 
           md:text-8xl
           
            text-gray-800 `}
         >
-          <span>Full-Stack</span> Developer
+          Full-Stack Developer
         </h1>
       </div>
       <div className="relative mt-3 smaller:mt-5 w-full small:mt-6 almostIpad:mt-8 md:mt-8 med:mt-12 lg:mt-8 lg:top-[-50px]">
