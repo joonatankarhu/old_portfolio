@@ -52,9 +52,9 @@ const Introduction = () => {
           className={`hidden lg:block lg:mx-12 lg:bg-white lg:rounded-xl shadow-md border-[1px] lg:px-5 py-4 lg:z-10 lg:mt-8`}
         >
           <p className="text-lg text-gray-600">
-            <i class="fa-solid fa-mug-hot mr-2"></i>Hello, I am a developer with
-            a strong passion for coffee, programming and learning new things. I
-            am currently <b>open for work</b>
+            Hello, I am a developer with a strong passion for coffee,
+            programming and learning new things. I am currently{" "}
+            <b>open for work</b>
           </p>
         </div>
       </div>

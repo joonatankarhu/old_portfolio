@@ -36,8 +36,6 @@ const DeskNav = () => {
         className="block px-5 py-4 text-black text-semibold hover:bg-blue-600 hover:text-white hover:transition-all duration-400 ml-auto"
         download="Joonatan_Karhu_CV"
       >
-        <i className="fas fa-file-pdf mr-2"></i>
-
         <span>Download CV</span>
       </a>
     </div>
