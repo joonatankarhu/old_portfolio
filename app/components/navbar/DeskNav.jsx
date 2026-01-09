@@ -33,10 +33,10 @@ const DeskNav = () => {
       </a>
       <a
         href="/CV.pdf"
-        className="block px-5 py-4 bg-black text-white text-bold hover:bg-blue-600 hover:text-white hover:transition-all duration-400 ml-auto"
+        className="block px-5 py-4 text-black text-semibold hover:bg-blue-600 hover:text-white hover:transition-all duration-400 ml-auto"
         download="Joonatan_Karhu_CV"
       >
-        Download CV
+        <span>Download CV</span>
       </a>
     </div>
   );
